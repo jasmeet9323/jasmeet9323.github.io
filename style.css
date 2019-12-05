@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+//two unequal columns that float next to each other
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  float: left;
+  width: 40%;
+}
+
+.right {
+  float: right;
+  width: 60%;
+}
+
+/*Navigation bar*/
+.nav {
+  overflow: hidden;
+}
+
+.nav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 4px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 10px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: dimgray;
+  color: white;
+}
+
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+// Clear floats after columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.rowProjectPhoto {
+  display: flex;
+}
+
+// Create three equal columns next to each other
+.columnProjectPhoto {
+  flex: 33.33%;
+  padding: 10px;
+}

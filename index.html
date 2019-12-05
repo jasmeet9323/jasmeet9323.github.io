@@ -2,27 +2,61 @@
 <html>
 <head>
 	<title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<div class="wrapper">
+    <div class="row">
+      <div class="column left">
+        <img src="img/profile-photo.jpg" style="width:200px" alt="Profile Photo" />
+        <h1 class="name"> Jasmeet Singh</h1>
+        <h4 class="subtitle"> Programmer, Graduate Student</h4>
+        <p class="bio">
+          Hello! Thanks for visiting me at one corner of the world wide web! I am a programmer and I like to work on interesting new problems. Currently, I am pursuing my Master's in Applied Science at the University of British Columbia. Feel free to browse through my work to know me better &#128522;
+        </p>
+        <ul class="social-links">
+          <li><a href="https://github.com/jasmeet9323">Github</a>
+          </li>
+        </ul>
 
-		<div class="left">
-			<img src="img/profile-photo.jpg" width="200" />
-			<h1 class="name"> Jasmeet Singh</h1>
-			<h4 class="subtitle"> Graduate Student - Computational Geometry</h4>
-		</div>
+        <div class="nav">
+          <a class="active" href="#home">Home</a>
+          <a href="#resume">Resume</a>
+          <a href="#projects">Projects</a>
+          <a href="#writes">Write</a>
+      </div>
+    </div>
 
-		<div class="right">
-			<p class="bio">
-				Hello! Thanks for visiting me at one corner of the world wide web :) I am a Master's student in Engineering the University of British Columbia. Presently, I am working on surface mesh development. In layman language, that means breaking bigger things or domains into smaller things. Basically, I try to break bigger things to smaller things so that it is convenient for another engineer to simulate something over that big domain. This involves a lot of numerical analysis, coding, insight into the problem at hand and creativity.
-			</p>
-			<ul class="social-links">
-				<li><a href="https://github.com/jasmeet9323">Github</a>
-				</li>
-			</ul>
-		</div>
+      <div class="column right">
+        <div class="projects">
+          <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
+          <p class="projectDescription">
+            Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow simulations. These meshes act as the foundation for generating hex-dominant 3D meshes.
+          </p>
+          <p>
+            I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab>ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
+          </p>
+          <p>
+            I am presenting my work at <a href="https://www.aiaa.org/SciTech?SSO=Y">AIAA Scitech Forum</a>. The paper can be found at <a href="">*give paper link*</a>. My paper received the Best Student Paper Award - Meshing Visualization and Computational Sciences for the conference.
+          </p>
 
-	</div>
+          <div class="rowProjectPhoto">
+            <div class="columnProjectPhoto">
+              <img class="projectImage" src="img/nacaEndCap.png" alt="anisotropic mesh nacaEndCap" style="width: 100%" />
+            </div>
+            <div class="columnProjectPhoto">
+              <img class="projectImage" src="img/nacaOblique.png" alt="anisotropic mesh nacaOblique" style="width: 100%" />
+            </div>
+            <div class="columnProjectPhoto">
+              <img class="projectImage"src="img/joint.png" alt="anisotropic mesh mechanical part" style="width: 100%" />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
 </body>
 </html>
 
