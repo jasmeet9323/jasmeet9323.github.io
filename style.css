@@ -15,7 +15,7 @@ body {
   flex: 20%;
   padding: 10px;
   max-width: 400px;
-  margin:50px 50px 50px 50px;
+  margin: 50px;
   
 }
 
@@ -23,7 +23,7 @@ body {
   flex: 50%;
   padding: 10px;
   max-width: 800px;
-  margin: auto;
+  margin: 20px 50px;
 }
 
 .left {
@@ -99,6 +99,8 @@ body {
 }
 
 img.projectImage {
+  display: block;
+  margin: 0 auto;
   transition: transform 0.25s ease;
 }
 
@@ -118,4 +120,8 @@ div.projectCard {
 
 h3.projectHeading {
   margin-left: 20px;
+}
+
+p.projectDescription, p.bio {
+  text-align: justify;
 }
