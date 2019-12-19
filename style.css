@@ -105,3 +105,17 @@ img.projectImage {
 img.projectImage:hover {
   transform: scale(2);
 }
+
+/*Each Project as a card*/
+div.projectCard {
+  background-color: gainsboro;
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid darkgray;
+  border-radius: 6px;
+
+}
+
+h3.projectHeading {
+  margin-left: 20px;
+}
