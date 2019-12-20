@@ -13,17 +13,25 @@ body {
 
 .columnMe {
   flex: 20%;
-  padding: 10px;
+  padding: 2%;
   max-width: 400px;
-  margin: 50px;
+  margin: 5% 0% 5% 5%;
   
+}
+
+/*Profile image*/
+img.profileImage {
+  width: 70%;
+  min-width: 150px;
+  display: block;
+  margin: 0 auto;
 }
 
 .columnProjects {
   flex: 50%;
-  padding: 10px;
+  padding: 2%;
   max-width: 800px;
-  margin: 20px 50px;
+  margin: 2% 5% 2% 0%;
 }
 
 .left {
@@ -78,24 +86,24 @@ body {
 
 .rowProjectPhoto {
   display: flex;
-  padding: 5px;
+  padding: 1%;
 }
 
 /* Create three equal columns next to each other*/
 .columnProjectPhoto {
   flex: 33.33%;
-  padding: 10px;
+  padding: 2%;
 }
 
 /* Create two columns*/
 .rowHalf{
   display: flex;
-  padding: 5px;
+  padding: 1%;
 }
 
 .columnHalf{
   flex: 50%;
-  padding: 10px;
+  padding: 3%;
 }
 
 img.projectImage {
@@ -111,15 +119,16 @@ img.projectImage:hover {
 /*Each Project as a card*/
 div.projectCard {
   background-color: gainsboro;
-  padding: 20px;
-  margin: 20px;
+  padding: 4%;
+  margin: 5%;
   border: 2px solid darkgray;
   border-radius: 6px;
+  min-width: 150px;
 
 }
 
 h3.projectHeading {
-  margin-left: 20px;
+  margin-left: 10%;
 }
 
 p.projectDescription, p.bio {
