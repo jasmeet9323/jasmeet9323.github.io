@@ -6,124 +6,125 @@
 </head>
 <body>
 	<div class="wrapper">
-    <div class="row">
-      <div class="columnMe">
-        <img class = "profileImage" src="img/profile-photo.jpg" alt="Profile Photo" />
-        <h1 class="name"> Jasmeet Singh</h1>
-        <h4 class="subtitle"> Programmer, Graduate Student</h4>
-        <p class="bio">
+
+    <div class="me">
+      <div class="row">
+        <div class="meLeft">
+          <img class = "profileImage" src="img/profile-photo.jpg" alt="Profile Photo" />    
+        </div>
+        <div class="meRight">
+         <h1 class="name"> Jasmeet Singh</h1>
+         <h4 class="subtitle"> Programmer, Graduate Student</h4>
+         <p class="bio">
           Hello! Thanks for visiting me at one corner of the world wide web! I am a programmer and I like to work on interesting new problems. I have been lucky to work on fascinating algorithms in various projects I pursued. Currently, I am pursuing my Master's in Applied Science at the University of British Columbia. Feel free to browse through my work to know me better &#128522;
         </p>
         <ul class="social-links">
           <li><a href="https://github.com/jasmeet9323">Github</a>
           </li>
         </ul>
-
-        <div class="nav">
-          <a class="active" href="#home">Home</a>
-          <a href="#resume">Resume</a>
-          <a href="#projects">Projects</a>
-          <a href="#writes">Write</a>
-        </div>
-      </div>
-
-      <div class="columnProjects">
-
-        <h3 class="projectHeading">Projects</h3>
-        <div class="projects">
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
-            <p class="projectDescription">
-              Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow simulations. These meshes act as the foundation for generating hex-dominant 3D meshes.
-            </p>
-            <p class="projectDescription">
-              I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab>ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
-            </p>
-            <p class="projectDescription">
-              I am presenting my work at <a href="https://www.aiaa.org/SciTech?SSO=Y">AIAA Scitech Forum 2020</a>. The paper can be found at <a href="">*give paper link*</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
-            </p>
-
-            <div class="rowProjectPhoto">
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/nacaEndCap.png" alt="anisotropic mesh nacaEndCap" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/nacaOblique.png" alt="anisotropic mesh nacaOblique" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage"src="img/joint.png" alt="anisotropic mesh mechanical part" style="width: 100%" />
-              </div>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Basic Viewers for Geometry Data Structures</h4>
-            <p class="projectDescription">
-              As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a href="https://www.cgal.org/">CGAL</a>), I developed viewers for various geometry data structures. These viewers are important to quicly visualize the result of an algorithm or to debug code. Viewers were developed for several packages in the CGAL repository including Voronoi Diagram, Periodic Triangulation, Nef Polyhedra and Arrangement 2D. Find more about my work and the code at <a href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/">GSoC Archive</a>.
-            </p>
-
-            <div class="rowProjectPhoto">
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/GSoC1.gif" alt="Voronoi" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/GSoC2.gif" alt="NefPolyhedra" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/GSoC3.gif" alt="P2T2" style="width: 100%" />
-              </div>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Automatic Secondary Motion: Dynamic Kelvinlets</h4>
-            <p class="projectDescription">
-              Adding secondary motion to animations is tricky for animators and waiting for another simulation to add such motion is inconvenient. Hence, a solution is to automatically add secondary motion to an object by solving the material elastodynamics equations. 
-            </p>
-
-            <p class="projectDescription">
-              Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical technique for real-time physically based animation of virtual elastic materials. Find the implementation on <a href="https://github.com/jasmeet9323/DynamicKelvinlets">Github</a>.
-            </p>
-            <p class="projectDescription">
-              The implementation details and evaluation of the technique can be found in the <a href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf">report</a>, which was submitted as the part of a course project. Credits to <a href="davepagurek.com">Dave</a> for the ideas and contributions to the project.
-            </p>
-
-            <div class="rowHalf">
-              <div class="columnHalf">
-                <img class="projectImage" src="img/punch.gif" alt="punching response" style="width: 100%" />
-              </div>
-              <div class="columnHalf">
-                <img class="projectImage" src="img/stomp.gif" alt="stomp response" style="width: 100%" />
-              </div>
-            </div>
-          </div>
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Network Structure of Turbulent Premixed Flames</h4>
-            <p class="projectDescription">
-              In this interdisciplinary project, I had the opportunity to work on experiments in turbulent combustion as well as algorithm development. The goal of the project was to characterize turbulent premixed flame fronts using complex networks and hence, provide a framework for possible flame interaction and subsequent control.
-            </p>
-            <p class="projectDescription">
-              I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network">complex networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve as a framework for characterizing flame-turbulence interactions. The study was published in Chaos: An interdisciplinary journal of non-linear science and can be found <a href="https://doi.org/10.1063/1.4980135">here</a>.
-            </p>
-
-            <div class="rowHalf">
-              <div class="columnHalf">
-                <img class="projectImage" src="img/flameFront.png" alt="flame" style="width: 100%" />
-              </div>
-              <div class="columnHalf">
-                <img class="projectImage" src="img/complexNetwork.jpg" alt="complex network" style="width: 67%" />
-              </div>
-            </div>
-          </div>
-
-
-        </div>
-
       </div>
     </div>
+
+    <div class="nav">
+      <a class="active" href="#home">Home</a>
+      <a href="#resume">Resume</a>
+      <a href="#projects">Projects</a>
+      <a href="#writes">Write</a>
+    </div>
   </div>
+
+  <h3 class="projectHeading">Projects</h3>
+  <div class="projects">
+    <div class="projectCard">
+      <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
+      <p class="projectDescription">
+        Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow simulations. These meshes act as the foundation for generating hex-dominant 3D meshes.
+      </p>
+      <p class="projectDescription">
+        I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab>ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
+      </p>
+      <p class="projectDescription">
+        I am presenting my work at <a href="https://www.aiaa.org/SciTech?SSO=Y">AIAA Scitech Forum 2020</a>. The paper can be found at <a href="">*give paper link*</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
+      </p>
+
+      <div class="rowProjectPhoto">
+        <div class="columnProjectPhoto">
+          <img class="projectImage" src="img/nacaEndCap.png" alt="anisotropic mesh nacaEndCap" style="width: 100%" />
+        </div>
+        <div class="columnProjectPhoto">
+          <img class="projectImage" src="img/nacaOblique.png" alt="anisotropic mesh nacaOblique" style="width: 100%" />
+        </div>
+        <div class="columnProjectPhoto">
+          <img class="projectImage"src="img/joint.png" alt="anisotropic mesh mechanical part" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <div class="projectCard">
+      <h4 class="projectTitle">Basic Viewers for Geometry Data Structures</h4>
+      <p class="projectDescription">
+        As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a href="https://www.cgal.org/">CGAL</a>), I developed viewers for various geometry data structures. These viewers are important to quicly visualize the result of an algorithm or to debug code. Viewers were developed for several packages in the CGAL repository including Voronoi Diagram, Periodic Triangulation, Nef Polyhedra and Arrangement 2D. Find more about my work and the code at <a href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/">GSoC Archive</a>.
+      </p>
+
+      <div class="rowProjectPhoto">
+        <div class="columnProjectPhoto">
+          <img class="projectImage" src="img/GSoC1.gif" alt="Voronoi" style="width: 100%" />
+        </div>
+        <div class="columnProjectPhoto">
+          <img class="projectImage" src="img/GSoC2.gif" alt="NefPolyhedra" style="width: 100%" />
+        </div>
+        <div class="columnProjectPhoto">
+          <img class="projectImage" src="img/GSoC3.gif" alt="P2T2" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <div class="projectCard">
+      <h4 class="projectTitle">Automatic Secondary Motion: Dynamic Kelvinlets</h4>
+      <p class="projectDescription">
+        Adding secondary motion to animations is tricky for animators and waiting for another simulation to add such motion is inconvenient. Hence, a solution is to automatically add secondary motion to an object by solving the material elastodynamics equations. 
+      </p>
+
+      <p class="projectDescription">
+        Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical technique for real-time physically based animation of virtual elastic materials. Find the implementation on <a href="https://github.com/jasmeet9323/DynamicKelvinlets">Github</a>.
+      </p>
+      <p class="projectDescription">
+        The implementation details and evaluation of the technique can be found in the <a href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf">report</a>, which was submitted as the part of a course project. Credits to <a href="davepagurek.com">Dave</a> for the ideas and contributions to the project.
+      </p>
+
+      <div class="rowHalf">
+        <div class="columnHalf">
+          <img class="projectImage" src="img/punch.gif" alt="punching response" style="width: 100%" />
+        </div>
+        <div class="columnHalf">
+          <img class="projectImage" src="img/stomp.gif" alt="stomp response" style="width: 100%" />
+        </div>
+      </div>
+    </div>
+
+    <div class="projectCard">
+      <h4 class="projectTitle">Network Structure of Turbulent Premixed Flames</h4>
+      <p class="projectDescription">
+        In this interdisciplinary project, I had the opportunity to work on experiments in turbulent combustion as well as algorithm development. The goal of the project was to characterize turbulent premixed flame fronts using complex networks and hence, provide a framework for possible flame interaction and subsequent control.
+      </p>
+      <p class="projectDescription">
+        I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network">complex networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve as a framework for characterizing flame-turbulence interactions. The study was published in Chaos: An interdisciplinary journal of non-linear science and can be found <a href="https://doi.org/10.1063/1.4980135">here</a>.
+      </p>
+
+      <div class="rowHalf">
+        <div class="columnHalf">
+          <img class="projectImage" src="img/flameFront.png" alt="flame" style="width: 100%" />
+        </div>
+        <div class="columnHalf">
+          <img class="projectImage" src="img/complexNetwork.jpg" alt="complex network" style="width: 67%" />
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
 </body>
 </html>
 
