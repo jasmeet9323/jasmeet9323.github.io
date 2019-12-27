@@ -4,6 +4,7 @@
 
 html {
   font-size: 16px;
+  line-height: normal;
 }
 
 body {
@@ -118,7 +119,7 @@ body {
 
 /*Each Project as a card*/
 .projectCard {
-  background-color: gainsboro;
+  background-color: whitesmoke;
   padding: 1em;
   border: 2px solid darkgray;
   border-radius: 6px;
