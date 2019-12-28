@@ -107,9 +107,9 @@ body {
 .aboutMe {
   margin: 0 auto;
   color: #fff;
-  padding: 10px
+  padding: 10px;
   font-size: 16px;
-  font-weight: 220;
+  font-weight: bold;
   line-height: 1.4;
   text-align: center;
   padding: 5px;
@@ -117,18 +117,33 @@ body {
   max-width: 800px;
 }
 
+.lightYellow {
+  color: #eeff00;
+}
+
 /* Profile Icons */
 .socialLinks {
   padding-left: 0;
+  list-style: none;
 }
 
 .listIcon {
-  display: inline;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .icon {
   opacity: 0.6;
   color: #fff;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa {
+  display: inline-block;
 }
 
 /*Navigation bar*/
@@ -279,12 +294,4 @@ a:active {
 
 img {
   vertical-align: middle;
-}
-
-.fa-3x {
-  font-size: 3em;
-}
-
-.fa {
-  display: inline-block;
 }
