@@ -117,15 +117,18 @@ body {
   max-width: 800px;
 }
 
-/*Profile image*/
-.profileImage {
-  width: 100%;
-  min-width: 150px;
-  max-width: 250px;
-  display: block;
-  margin: 0 auto;
-  border-radius: 6px;
-  vertical-align: middle;
+/* Profile Icons */
+.socialLinks {
+  padding-left: 0;
+}
+
+.listIcon {
+  display: inline;
+}
+
+.icon {
+  opacity: 0.6;
+  color: #fff;
 }
 
 /*Navigation bar*/
@@ -278,6 +281,10 @@ img {
   vertical-align: middle;
 }
 
-.fa-volume-up:before {
-    content: "\f028";
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa {
+  display: inline-block;
 }
