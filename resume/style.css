@@ -6,7 +6,20 @@ ul {
 	padding-inline-start: 20px;
 }
 
-
 .inline {
 	display: inline;
+}
+
+a {
+	color: red;
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+a:active {
+	color: darkred;
 }
