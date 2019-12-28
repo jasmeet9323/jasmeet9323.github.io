@@ -3,9 +3,9 @@
 }
 
 html, body, .header {
-    min-height: 100% !important;
-    height: 100%;
-    margin: 0;
+  min-height: 100% !important;
+  height: 100%;
+  margin: 0;
 }
 
 html {
@@ -27,27 +27,38 @@ body {
   width: 100%;
   position: relative;
   margin: auto;
+  background-color: #222;
 }
 
 .locationLabel {
   position: absolute;
-  opacity: 0.3;
+  opacity: 0.6;
   left: 20px;
   bottom: 10px;
+  color: #fff;
+  font-size: 16px
 }
 
 .backgroundImage {
-  background-image: url('img/background/lampost.png');
   background-attachment: scroll;
   position: absolute;
   top : 0; bottom: 0;
   left: 0; right: 0;
   background-repeat: no-repeat;
-  opacity: 0.7;
-  object-fit: contain;
-  object-position: -40% 0;
+  opacity: 0.3;
+
   background-position: center center;
   background-size: cover;
+  height: 100%;
+  width: 100%;
+
+}
+
+.backgroundImageElement {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: -center center;
 }
 
 .bio {
@@ -67,15 +78,17 @@ body {
 }
 
 .profilePic {
-  height: 300px;
+  height: 240px;
   border: 2.5px solid #fff;
   border-radius: 10%;
   display: block;
   margin: 0 auto;
+  margin-top: -60px;
 }
 
 .name, .subtitle{
   text-align: center;
+  color: #fff;
 }
 
 .name {
@@ -93,8 +106,15 @@ body {
 
 .aboutMe {
   margin: 0 auto;
-  text-align: justify;
   color: #fff;
+  padding: 10px
+  font-size: 16px;
+  font-weight: 220;
+  line-height: 1.4;
+  text-align: center;
+  padding: 5px;
+  margin-top: 15px;
+  max-width: 800px;
 }
 
 /*Profile image*/
@@ -256,4 +276,8 @@ a:active {
 
 img {
   vertical-align: middle;
+}
+
+.fa-volume-up:before {
+    content: "\f028";
 }
