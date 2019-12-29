@@ -1,166 +1,198 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Resume</title>
+	<title>Jasmeet Singh - Resume</title>
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#242424">
-	<link rel="icon" sizes="192x192" href="resources/avatar.png">
+	<link rel="icon" sizes="192x192" href="../resources/avatar.png">
 </head>
 <body>
-	<div class="wrapper">
+	<div class="container">
 		<div class="container header">
 			<h1>
 				<a href="https://jasmeet9323.github.io">Jasmeet Singh</a>
-			</h1>
+			</h1><br>
+			<!--<a href="mailto:jasmeet.singh.mec11@iitbhu.ac.in" target="_top">jasmeet.singh.mec11@iitbhu.ac.in</a>-->
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="sidebar">
+			<h2>Education</h2>
+			<ul>
+				<li>MASc, Mechanical Engg., University of British Columbia</li>
+				<span class="info">Sept 2017 - Present</span>
+				<li>B.Tech, Mechanical Engg., IIT BHU, Varanasi</li>
+				<span class="info">July 2011 - May 2015</span>
+			</ul>
+
+			<h2>Contact</h2>
+			<ul>
+				<li>jasmeet.singh.mec11<emph>at</emph>iitbhu.ac.in</li>
+				<li><a href="https://jasmeet9323.github.io/">jasmeet9323.github.io</a></li>
+				<li><a href="https://github.com/jasmeet9323">github.com/jasmeet9323</a></li>
+				<li>+1 778 - 798 - 9323</li>
+			</ul>
+
+			<h2>Skills</h2>
+			<ul>
+				<li>Professional experience with C++, <span>&#183;</span>
+				Python, MATLAB </li>
+				<li>Experience in Numerical Simulations</li>
+				<li>Experience in Algorithm Development for Geometry Discretization and Visualization</li>
+				<li>Passion for disruptive methodologies in Numerical Simulation and Graphics problems</li>
+			</ul>
+
+			<h2>Awards</h2>
+			<table class="awards">
+				<tr>
+					<td>2019</td>
+					<td>Best Student Paper Award - AIAA SciTech 2020</td>
+				</tr>
+				<tr>
+					<td>2018</td>
+					<td>Continuing Merit Award - UBC</td>
+				</tr>
+				<tr>
+					<td>2017</td>
+					<td>Department Entrance Scholarship - UBC</td>
+				</tr>
+				<tr>
+					<td>2015</td>
+					<td>Merit-Cum Means Sholarship | 4 years of Bachelor's - IIT, Varanasi</td>
+				</tr>
+				<tr>
+					<td>2013</td>
+					<td>Unilever Future Leaders Internship Fellowship - Pan IIT</td>
+				</tr>
+				<tr>
+					<td>2011</td>
+					<td>99.3 percentile in IIT - Joint Entrance Exam</td>
+				</tr>
+				<tr>
+					<td>2011</td>
+					<td>99.7 percentile in All India Engineering Entrance Examination</td>
+				</tr>
+				<!--<tr>
+					<td>100%</td>
+					<td>Mathematics Central Board Examination</td>
+				</tr>-->
+			</table>
+
+			<h2>Leadership</h2>
+			<table class="leadership">
+				<tr>
+					<td>2018-2019</td>
+					<td>VP, Communications - <a href="http://igsnubc.com/">Interdisciplinary Graduate Student Network (iGSN)</a></td>
+				</tr>
+				<tr>
+					<td>2014-2015</td>
+					<td>Co-Founder and Core Member - Career Guidance Forum, IIT, Varanasi</td>
+				</tr>
+			</table>
 		</div>
 
-		<div class="container">
-			<div class="sidebar">
-				<h2>Education</h2>
-				<ul>
-					<li>MASc, Mechanical Engg., University of British Columbia</li>
-					<br>
-					<span class="info">Sept 2017 - Present</span>
-					<li>B.Tech, Mechanical Engg., IIT BHU, Varanasi</li>
-					<br>
-					<span class="info">July 2011 - May 2015</span>
-				</ul>
+		<div class="main">
+			<div class="experience">
+				<h2>Experience</h2>
 
-				<h2>Contact</h2>
-				<ul>
-					<li>jasmeet.singh.mec11<emph>at</emph>iitbhu.ac.in</li>
-					<li><a href="https://jasmeet9323.github.io/">jasmeet9323.github.io</a></li>
-					<li><a href="https://github.com/jasmeet9323">github.com/jasmeet9323</a></li>
-					<li>(+1) 778 798 9323</li>
-				</ul>
+				<div class="experienceEntry">
+					<h4 class="inline bold"><a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab, UBC</a> | </h4>
+					<h4 class="inline">Graduate Research Assistant</h4> <br>
+					<h5 class="inline">Sep-2017 - Present |</h5>
+					<h5 class="inline">Vancouver, BC</h5>
 
-				<h2>Skills</h2>
-				<ul>
-					<li>Professional experience with <strong>C++, <span>&#183;</span>
-					Python, MATLAB</strong> </li>
-					<li>Experience in Numerical Simulations</li>
-					<li>Experience in Algorithm Development for Geometry Discretization and Visualization</li>
-					<li>Passion for disruptive methodologies in Numerical Simulation and Graphics problems</li>
-				</ul>
+					<ul>
+						<li>
+							Created a surface mesh generator capable of producing quad-dominant, anisotropic mesh automatically from a triangulation of a surface.
+						</li>
+						<li>
+							The generated mesh unlike before, can directly be fed into a 3-D mesh generator, refiner and fluid flow solvers. Moreover, it makes the solverrobust and increases its accuracy by 30%. Primary coding language: C/C++ (85%), Python(15%)
+						</li>
+					</ul>
+				</div>
 
-				<h2>Awards</h2>
-				<table class="awards">
-					<tr>
-						<td>2019</td>
-						<td>Best Student Paper Award - AIAA SciTech 2020</td>
-					</tr>
-					<tr>
-						<td>2018</td>
-						<td>Continuing Merit Award - UBC</td>
-					</tr>
-					<tr>
-						<td>2017</td>
-						<td>Department Entrance Scholarship - UBC</td>
-					</tr>
-					<tr>
-						<td>2015</td>
-						<td>Merit-Cum Means Sholarship | 4 years of Bachelor's - IIT, Varanasi</td>
-					</tr>
-					<tr>
-						<td>2013</td>
-						<td>Unilever Future Leaders Internship Fellowship - Pan IIT</td>
-					</tr>
-					<tr>
-						<td>2011</td>
-						<td>99.3 percentile in IIT - Joint Entrance Exam</td>
-					</tr>
-					<tr>
-						<td>2011</td>
-						<td>99.7 percentile in All India Engineering Entrance Examination</td>
-					</tr>
-					<tr>
-						<td>100%</td>
-						<td>Mathematics Central Board Examination</td>
-					</tr>
-				</table>
+				<div class="experienceEntry">
+					<h4 class="inline bold">CGAL, Google Summer of Code | </h4>
+					<h4 class="inline">Student Developer</h4> <br>
+					<h5 class="inline">May 2019 - July 2019 |</h5>
+					<h5 class="inline">Vancouver, BC</h5>	
 
-				<h2>Leadership</h2>
-				<table class="leadership">
-					<tr>
-						<td>2018-2019</td>
-						<td>VP, Communications - <a href="http://igsnubc.com/">Interdisciplinary Graduate Student Network (iGSN)</a></td>
-					</tr>
-					<tr>
-						<td>2014-2015</td>
-						<td>Co-Founder and Core Member - Career Guidance Forum, IIT, Varanasi</td>
-					</tr>
-				</table>
-			</div>
+					<ul>
+						<li>
+							In this Google Summer of Code(GSoC) project, I develop basic viewers for various data structures in CGAL (Computational Geometry Algorithms Libraty). These basic viewers are basically global functions that	allow 3D visualization of CGAL data-structures. They are very useful in order to visualize the result of an algorithm and can help to debug some code.
+						</li>
+						<li>
+							Interactive viewers were developed for data structures - Voronoi Diagram, Nef Polyhedra, Periodic Triangulaiton and Arrangement 2D.
+						</li>
+					</ul>
+				</div>
 
-			<div class="main">
-				<div class="experience">
-					<h2>Experience</h2>
 
-					<div class="experienceEntry">
-						<h3 class="inline"><a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab, UBC</a> | </h3>
-						<h4 class="inline">Graduate Research Assistant</h4> <br>
-						<h5 class="inline">Sep-2017 - Present |</h5>
-						<h5 class="inline">Vancouver, BC</h5> <br>
+				<div class="experienceEntry">
+					<h4 class="inline bold">Indian Institute of Science | </h4>
+					<h4 class="inline">Research Assistant</h4> <br>
+					<h5 class="inline">Jan 2016 - July 2017 |</h5>
+					<h5 class="inline">Vancouver, BC</h5>
+
+					<ul>
+						<li>
+							Developed an algorithm to convert spatial flame fronts into connected graphs.
+						</li>
+						<li>
+							Performed network analysis on the constructed graphs to infer flame front	characteristics.
+						</li>
+						<li>
+							This study produced state of the art highly enriched graphicalrepresentation of	flame front and improved flame prediction by 20%.								
+						</li>
+					</ul>
+				</div>
+
+				<div class="projects">
+					<h2>Other Projects</h2>
+					<div class="projectEntry">
+						<h4 class="bold">Dynamic Kelvinlets</h4>
+						<h5 class="inline">Digital Humans Course Project | </h5>
+						<h5 class="inline">Sep 2019 - Dec 2019</h5>
 
 						<ul>
 							<li>
-								Created a surface mesh generator capable of producing quad-dominant, anisotropic mesh automatically from a triangulation of a surface.
+								Implemented a procedure to automatically add secondary motion to objects given skeletal animation keyframes for a model using linear blend skinning.
 							</li>
 							<li>
-								The generated mesh unlike before, can directly be fed into a 3-D mesh generator, refiner and fluid flow solvers. Moreover, it makes the solverrobust and increases its accuracy by 30%. Primary coding language: C/C++ (85%), Python(15%)
+								The algorithm solves elastodynamics equations to compute material response towards elastodynamic forces.
+							</li>
+							<li>
+								The implementation runs in about real time (55.6 FPS) and requires no information about the geometry of the object being animated.
 							</li>
 						</ul>
 					</div>
+				</div>
 
-					<div class="experienceEntry">
-						<h3 class="inline">CGAL, Google Summer of Code | </h3>
-						<h4 class="inline">Student Developer</h4> <br>
-						<h5 class="inline">May 2019 - July 2019 |</h5>
-						<h5 class="inline">Vancouver, BC</h5> <br>
-
-						<ul>
-							<li>
-								Computational Geometry Algorithms Library(CGAL) is an open-source software project that provides easy access to efficient and reliable geometric algorithms in the form of a C++ library. CGAL is used in various areas needing geometric	computation, such as geographic information systems, computer-aided design,	molecular biology, medical imaging, computer graphics, and robotics.
-							</li>
-							<li>
-								In this Google Summer of Code(GSoC) project, I develop basic viewers for various data structures in CGAL. These basic viewers are basically global functions that	allow 3D visualization of CGAL data-structures. They are very useful in order to visualize the result of an algorithm and can help to debug some code.
-							</li>
-						</ul>
+				<div class="publications">
+					<h2>Publications</h2>
+					<ul>
+						<li>
+							<a href="https://www.researchgate.net/publication/338186733_Advancing_Layer_Surface_Mesh_Generation">
+								Singh J., Olliver Gooch, Carl F. "Advancing Layer Surface Mesh Generation." AIAA Scitech 2020 Forum. 2020.
+							</a>
+						</li>
+						<li>
+							<a href="https://doi.org/10.1063/1.4980135">
+								Singh, Jasmeet, et al. "Network structure of turbulent premixed flames." Chaos: An Interdisciplinary Journal of Nonlinear Science 27.4 (2017): 043107.
+							</a>
+						</li>
+					</ul>
+					<div class="publicationEntry">
+						
 					</div>
-
-
-					<div class="experienceEntry">
-						<h3 class="inline">Indian Institute of Science | </h3>
-						<h4 class="inline">Research Assistant</h4> <br>
-						<h5 class="inline">Jan 2016 - July 2017 |</h5>
-						<h5 class="inline">Vancouver, BC</h5> <br>
-
-						<ul>
-							<li>
-								Developed an algorithm to convert spatial flame fronts into connected graphs.
-							</li>
-							<li>
-								Performed network analysis on the constructed graphs to infer flame front	characteristics.
-							</li>
-							<li>
-								This study produced state of the art highly enriched graphicalrepresentation of	flame front and improved flame prediction by 20%.								
-							</li>
-						</ul>
-					</div>
-
-					<div class="projects">
-						<h2>Projects</h2>
-						<div class="projectEntry">
-							
-						</div>
-					</div>
-
-
 				</div>
 
 
 			</div>
 		</div>
-	</body>
-	</html>
+
+	</div>
+</body>
+</html>
