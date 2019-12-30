@@ -66,6 +66,10 @@ body {
   margin: 5px 5px 0 0;
 }
 
+.pullRight {
+  float: right;
+}
+
 .toggleOverride {
     color: rgba(255,255,255,0.4);
     border-radius: 10px;
@@ -79,7 +83,7 @@ body {
   width: 250px;
   background: #222;
   position: fixed;
-  height: 80%;
+  height: 100%;
   z-index: 1000;
 }
 
@@ -91,6 +95,27 @@ body {
   -ms-transition: all .4s ease 0;
   -o-transition: all .4s ease 0;
   transition: all .4s ease 0;
+}
+
+.sidebarNav li a {
+  color: #999;
+  display: block;
+  text-decoration: none;
+}
+
+.sidebarNav li {
+  line-height: 40px;
+  text-indent: 20px;
+}
+
+.sidebarNav .sidebarName {
+  height: 55px;
+  line-height: 55px;
+  font-size: 18px;
+}
+
+li {
+  list-style: none;
 }
 
 #menuToggle:hover {
