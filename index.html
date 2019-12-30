@@ -13,15 +13,19 @@
   <!-- Audio clip of name pronounciation-->
   <audio id="myName">
     <source src="resources/jassi.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
     </audio>
     <audio id="myFullName1">
       <source src="resources/jasmeet.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
       </audio>
 
       <audio id="myFullName2">
         <source src="resources/singh.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
         </audio>
         <script>
+          // play audio
           var shortName = document.getElementById("myName"); 
 
           function playPetName() { 
@@ -37,8 +41,27 @@
           function playFullName2() {
             fullName2.play();
           }
+
+          // add class to element sidebar
+          function showSidebar() {
+            var element = document.getElementById("sidebar");
+            element.classList.add("show");
+          }
         </script>
         <div class="wrapper">
+
+          <!-- Icon and Sidebar -->
+          <a id="menuToggle" href="#" class="button buttonLg toggle" onclick="showSidebar()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <div id="sidebar">
+            <ul class="sidebarNav">
+              <a id="menuClose" href="#" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
+                <i class="fa fa-times"></i>
+              </a>
+              <li>sidebar</li>
+            </ul>
+          </div>
 
           <!-- Header page - Background Image and Intro -->
           <div class="header">
