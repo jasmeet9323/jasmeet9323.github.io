@@ -44,8 +44,13 @@
 
           // add class to element sidebar
           function showSidebar() {
-            var element = document.getElementById("sidebar");
-            element.classList.add("show");
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.add("show");
+          }
+
+          function hideSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            sidebar.classList.remove("show");
           }
         </script>
         <div class="wrapper">
@@ -56,10 +61,10 @@
           </a>
           <div id="sidebar">
             <ul class="sidebarNav">
-              <a id="menuClose" href="#" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
+              <a id="menuClose" href="#"  onclick="hideSidebar()" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
                 <i class="fa fa-times"></i>
               </a>
-              <li class="sidabarName">
+              <li class="sidebarName">
                 <a href="https://jasmeet9323.github.io">Jasmeet Singh</a>
               </li>
               <li>

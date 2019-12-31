@@ -33,6 +33,17 @@ body {
   transition: all .3s ease 0;
 }
 
+#menuClose {
+  top: 0;
+  right: 0;
+  z-index: 1;
+  color: #fff;
+}
+
+a#menuClose:active {
+  color: #fff;
+}
+
 .button {
   display: inline-block;
   margin-bottom: 0;
@@ -71,10 +82,10 @@ body {
 }
 
 .toggleOverride {
-    color: rgba(255,255,255,0.4);
-    border-radius: 10px;
-    background-color: #222;
-    border-color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.4);
+  border-radius: 10px;
+  background-color: #222;
+  border-color: rgba(255,255,255,0.4);
 }
 
 #sidebar {
@@ -97,6 +108,15 @@ body {
   transition: all .4s ease 0;
 }
 
+.sidebarNav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  line-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .sidebarNav li a {
   color: #999;
   display: block;
@@ -112,6 +132,15 @@ body {
   height: 55px;
   line-height: 55px;
   font-size: 18px;
+}
+
+li.sidebarName {
+  font-size: 22px;
+}
+
+ul.sidebarNav > li:hover a {
+  background-color: #333333;
+  color: white;
 }
 
 li {
