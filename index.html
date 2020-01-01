@@ -56,28 +56,31 @@
         <div class="wrapper">
 
           <!-- Icon and Sidebar -->
-          <a id="menuToggle" href="#top" class="button buttonLg toggle" onclick="showSidebar()">
+          <a id="menuToggle" class="button buttonLg toggle" onclick="showSidebar()">
             <i class="fa fa-bars"></i>
           </a>
           <div id="sidebar">
             <ul class="sidebarNav">
-              <a id="menuClose" href="#"  onclick="hideSidebar()" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
+              <a id="menuClose" onclick="hideSidebar()" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
                 <i class="fa fa-times"></i>
               </a>
               <li class="sidebarName">
-                <a href="https://jasmeet9323.github.io">Jasmeet Singh</a>
+                <a href="#home">Jasmeet Singh</a>
               </li>
               <li>
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#current">Current indulgence</a>
+                <a href="#current">Current Status</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
               </li>
               <li>
                 <a href="#blog">Blog</a>
+              </li>
+              <li>
+                <a href="https://jasmeet9323.github.io/resume">Resume</a>
               </li>
             </ul>
           </div>
@@ -133,8 +136,9 @@
             </div>
           </div>
 
-          <h3 class="projectHeading">Projects</h3>
-          <div class="projects">
+          <!-- Projects -->
+          <div id="projects" class="projects">
+            <h3 class="projectHeading">Projects</h3>
             <div class="projectCard">
               <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
               <p class="projectDescription">
