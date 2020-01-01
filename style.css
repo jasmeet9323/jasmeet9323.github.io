@@ -210,13 +210,6 @@ li {
   object-fit: cover;
 }
 
-.bio {
-  margin: 0 auto;
-  padding: 2%;
-  width: 100%;
-  max-width: 1200px;
-}
-
 .landing {
   vertical-align: middle;
   color-rendering: #fff;
@@ -260,7 +253,6 @@ li {
   margin: 0 auto;
   color: #fff;
   padding: 10px;
-  font-size: 16px;
   font-weight: bold;
   line-height: 1.4;
   text-align: center;
@@ -320,6 +312,7 @@ li {
   }
 }
 
+/*
 .nav a {
   float: left;
   color: black;
@@ -340,6 +333,7 @@ li {
   background-color: dimgray;
   color: white;
 }
+*/
 
 
 .projects {
@@ -362,7 +356,7 @@ li {
 /*Each Project as a card*/
 .projectCard {
   background-color: whitesmoke;
-  padding: 1.5em;
+  padding: 1em;
   border: 2px solid darkgray;
   border-radius: 6px;
 
@@ -431,6 +425,43 @@ h3.projectHeading {
 
 p.projectDescription {
   text-align: justify;
+  font-size: calc(16px + 0.1vw);
+}
+
+p {
+  font-size: calc(16px + 0.3vw);
+}
+
+h1 {
+  font-size: calc(32px + 0.75vw);
+}
+
+h2 {
+ font-size: calc(24px + 0.5vw); 
+}
+
+h3 {
+  font-size: calc(18px + 0.4vw);
+}
+
+h4 {
+  font-size: calc(16px + 0.35vw);
+}
+
+h3 {
+  font-size: calc(16px + 0.3vw);
+}
+
+h4 {
+  font-size: calc(16px + 0.25vw);
+}
+
+h5 {
+  font-size: calc(14px + 0.225vw);
+}
+
+h6 {
+  font-size: calc(14px + 0.2vw);
 }
 
 /**** Links *********/
@@ -455,4 +486,29 @@ a.lightYellow:active {
 
 img {
   vertical-align: middle;
+}
+
+/* Bio */
+.bio {
+  padding: 50px 0;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 5px 15px;
+}
+
+.avatar {
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+  padding: 10px 0;
+  padding-bottom: 50px;
+}
+
+.meBits {
+  margin-bottom: 25px;
 }
