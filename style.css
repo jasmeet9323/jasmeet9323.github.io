@@ -347,8 +347,9 @@ li {
   display: -webkit-flex;
   display: flex;
 
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
 
   width: 100%;
 }
@@ -358,12 +359,15 @@ li {
   background-color: whitesmoke;
   padding: 1em;
   border: 2px solid darkgray;
-  border-radius: 6px;
+  border-radius: 2px;
 
-  width: 900px;
+  max-width: 800px;
   min-width: 150px;
 
   margin: 1em;
+
+  /*shadow to appear as card*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
@@ -419,12 +423,12 @@ img.projectImage:hover {
 }
 
 
-h3.projectHeading {
+.projectTitle, .projectHeading {
   text-align: center;
 }
 
 p.projectDescription {
-  text-align: justify;
+  text-align: center;
   font-size: calc(16px + 0.1vw);
 }
 
@@ -441,7 +445,7 @@ h2 {
 }
 
 h3 {
-  font-size: calc(18px + 0.4vw);
+  font-size: calc(20px + 0.4vw);
 }
 
 h4 {
@@ -502,5 +506,7 @@ img {
 }
 
 .meBits {
+  margin: 0 auto;
   margin-bottom: 25px;
+  max-width: 800px;
 }
