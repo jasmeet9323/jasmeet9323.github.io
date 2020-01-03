@@ -38,9 +38,6 @@
                 <i class="fa fa-times"></i>
               </a>
               <li class="sidebarName">
-                <a href="#home">Jasmeet Singh</a>
-              </li>
-              <li>
                 <a href="#home">Home</a>
               </li>
               <li>
@@ -56,7 +53,7 @@
                 <a href="#blog">Blog</a>
               </li>
               <li>
-                <a href="https://jasmeet9323.github.io/resume">Resume</a>
+                <a href="https://jasmeet9323.github.io/resume" target="_blank">Resume</a>
               </li>
             </ul>
           </div>
@@ -117,14 +114,25 @@
             <!-- ANSLab -->
             <h3 class="sectionHeading">Work</h3>
             <div class="projects">
-              <div class="projectCard" >
-                <a href="http://tetra.mech.ubc.ca/projects/ANSLab"><img src="img/anslab.jpg" class="avatar anslab"></a>
+              <div class="projectCard" style="margin: 1.5em 1em">
+                <a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank"><img src="img/anslab.jpg" class="avatar anslab"></a>
                 <p class="projectDescription">
-                  I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant Anisotropic Meshes.
+                  I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant Anisotropic Meshes.
+                  <br><br>
+                  I wrote an automatic and fast method to discretize the surface of geometric domains (bodies) in a way that they can be used to generate volume meshes (volumetric discretization).
+                  <br><br>
+                  To know about my work and find out why it is so important, browse the <a href="#advancingLayer">project description</a>.
                 </p>
               </div>
               <div class="projectCard">
-                
+                <a href="https://jetpecl.wordpress.com/" target="_blank"><img src="img/iisc.png" class="avatar" style="width: 160px"></a>
+                <p class="projectDescription">
+                  I worked at Propulsion and Energy Conversion Laboratories, IISc, Bangalore (<a href="https://jetpecl.wordpress.com/" target="_blank">now at University of Toronto</a>) for one and a half years.
+                  <br><br>
+                  I pursued a highly interdisciplinary project wherein I found correlations between flame propagation and <a href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex network</a> theory. Here, I developed an algorithm to convert spatial flame fronts to complex networks.
+                  <br><br>
+                  Know more about my work in the project descrition <a href="#networkStructure">here</a>.
+                </p>
               </div>
             </div>       
 
@@ -139,16 +147,16 @@
               <img src="img/workIcon.png" class="avatar" style="padding-left: 20px">
             </div>
             <div class="projects">
-              <div class="projectCard">
+              <div id="advancingLayer" class="projectCard">
                 <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
                 <p class="projectDescription">
                   Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow simulations. These meshes act as the foundation for generating hex-dominant volume meshes with complete 3D anisotropy.
                 </p>
                 <p class="projectDescription">
-                  I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab>ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
+                  I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab target="_blank">ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
                 </p>
                 <p class="projectDescription">
-                  I am presenting my work at <a href="https://www.aiaa.org/SciTech?SSO=Y">AIAA Scitech Forum 2020</a>. The paper can be found <a href="https://www.researchgate.net/publication/338186733_Advancing_Layer_Surface_Mesh_Generation">here</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
+                  I presented my work at <a href="https://www.aiaa.org/SciTech?SSO=Y" target="_blank">AIAA Scitech Forum 2020</a>. The paper can be found <a href="https://www.researchgate.net/publication/338186733_Advancing_Layer_Surface_Mesh_Generation" target="_blank">here</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf" target="_blank">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
                 </p>
 
                 <div class="rowProjectPhoto">
@@ -167,11 +175,11 @@
               <div class="projectCard">
                 <h4 class="projectTitle">Basic Viewers for Geometry Data Structures</h4>
                 <p class="projectDescription">
-                  As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a href="https://www.cgal.org/">CGAL</a>), I developed viewers for various geometry data structures.
+                  As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a href="https://www.cgal.org/" target="_blank">CGAL</a>), I developed viewers for various geometry data structures.
                   <br> <br>
                   These viewers are important to quicly visualize the result of an algorithm or to debug code. Viewers were developed for several packages in the CGAL repository including Voronoi Diagram, Periodic Triangulation, Nef Polyhedra and Arrangement 2D.
                   <br> <br>
-                  Find more about my work and the code at <a href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/">GSoC Archive</a>.
+                  Find more about my work and the code at <a href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/" target="_blank">GSoC Archive</a>.
                 </p>
 
                 <div class="rowProjectPhoto">
@@ -194,10 +202,10 @@
                 </p>
 
                 <p class="projectDescription">
-                  Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical technique for real-time physically based animation of virtual elastic materials. Find the implementation on <a href="https://github.com/jasmeet9323/DynamicKelvinlets">Github</a>.
+                  Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/" target="_blank">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical technique for real-time physically based animation of virtual elastic materials. Find the implementation on <a href="https://github.com/jasmeet9323/DynamicKelvinlets" target="_blank">Github</a>.
                 </p>
                 <p class="projectDescription">
-                  The implementation details and evaluation of the technique can be found in the <a href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf">report</a>, which was submitted as the part of a course project. Credits to <a href="davepagurek.com">Dave</a> for the ideas and contributions to the project.
+                  The implementation details and evaluation of the technique can be found in the <a href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf" target="_blank">report</a>, which was submitted as the part of a course project. Credits to <a href="davepagurek.com" target="_blank">Dave</a> for the ideas and contributions to the project.
                 </p>
 
                 <div class="rowHalf">
@@ -210,13 +218,13 @@
                 </div>
               </div>
 
-              <div class="projectCard">
+              <div id="networkStructure" class="projectCard">
                 <h4 class="projectTitle">Network Structure of Turbulent Premixed Flames</h4>
                 <p class="projectDescription">
                   In this interdisciplinary project, I had the opportunity to work on experiments in turbulent combustion as well as algorithm development. The goal of the project was to characterize turbulent premixed flame fronts using complex networks and hence, provide a framework for possible flame interaction and subsequent control.
                 </p>
                 <p class="projectDescription">
-                  I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network">complex networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve as a framework for characterizing flame-turbulence interactions. The study was <a href="https://doi.org/10.1063/1.4980135">published in Chaos: An Interdisciplinary Journal of Non-Linear Science</a>.
+                  I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve as a framework for characterizing flame-turbulence interactions. The study was <a href="https://doi.org/10.1063/1.4980135" target="_blank">published in Chaos: An Interdisciplinary Journal of Non-Linear Science</a>.
                 </p>
 
                 <div class="rowHalf">
