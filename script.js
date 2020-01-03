@@ -26,3 +26,15 @@ function hideSidebar() {
   var sidebar = document.getElementById("sidebar");
   sidebar.classList.remove("show");
 }
+
+/*// hide sidebar when clicked elsewhere
+$("#sidebar").click(function(e) {
+  e.stopPropagation();
+});
+
+$(document).click(function() {
+  if($("#sidebar").hasClass("show")){
+    $("#sidebar").removeClass("show");
+  }
+});
+*/

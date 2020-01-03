@@ -20,9 +20,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="theme-color" content="#242424">
         <link rel="icon" sizes="192x192" href="resources/avatar.png">
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <script src="script.js"> </script>
+        <link rel="stylesheet" type="text/css" href="style.css">        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+        <script src="jquery-3.4.1.min.js"></script>
+        <script src="script.js"> </script>
       </head>
       <body>
         <div class="wrapper">
@@ -43,7 +44,10 @@
                 <a href="#home">Home</a>
               </li>
               <li>
-                <a href="#current">Current Status</a>
+                <a href="#aboutMe">About Me</a>
+              </li>
+              <li>
+                <a href="#work">Work</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
@@ -70,7 +74,7 @@
               <div class="bioRight">
                 <h1 class="name"> Jassi </h1>
                 <h4 class="subtitle"> Programmer, Graduate Student</h4>
-                <p class="aboutMe">
+                <p class="aboutMeFrontPage">
                   Hi! I am 
                   <a onclick="playFullName1()" class="lightYellow">
                     <i class="fa fa-volume-up" style="font-size: 12px"></i>
@@ -94,8 +98,9 @@
           </div>
 
           <!-- My Bio -->
-          <div id="current" class="bio">
+          <div id="aboutMe" class="bio">
             <div class="container">
+              <h3 class="sectionHeading">About Me</h3>
               <img src="resources/avatar.png" class="avatar">
               <p class="meBits">
                 I am a Master's in Applied Science student at the University of British Columbia. As a part of being in thesis based graduate program, I am focused on working in Computational Geometry. Specifically, I develop algorithms for mesh generation, which is basically discretizing a body into smaller bodies.
@@ -107,10 +112,30 @@
             </div>
           </div>
 
+          <!-- Work -->
+          <div id="work">
+            <!-- ANSLab -->
+            <h3 class="sectionHeading">Work</h3>
+            <div class="projects">
+              <div class="projectCard" >
+                <a href="http://tetra.mech.ubc.ca/projects/ANSLab"><img src="img/anslab.jpg" class="avatar anslab"></a>
+                <p class="projectDescription">
+                  I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant Anisotropic Meshes.
+                </p>
+              </div>
+              <div class="projectCard">
+                
+              </div>
+            </div>       
+
+            <!--  -->
+
+          </div>
+
           <!-- Projects -->
           <div id="projects">
             <div id="projectHeader">
-              <h3 class="projectHeading">Projects</h3>
+              <h3 class="sectionHeading">Projects</h3>
               <img src="img/workIcon.png" class="avatar" style="padding-left: 20px">
             </div>
             <div class="projects">
@@ -204,8 +229,10 @@
                 </div>
               </div>
             </div>
-
           </div>
+          <!-- Projects End -->
+
+
         </div>
       </body>
       </html>

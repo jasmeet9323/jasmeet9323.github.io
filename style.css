@@ -6,6 +6,7 @@ html, body, .header {
   min-height: 100% !important;
   height: 100%;
   margin: 0;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -249,7 +250,7 @@ li {
 .bioRight {
 }
 
-.aboutMe {
+.aboutMeFrontPage {
   margin: 0 auto;
   color: #fff;
   padding: 10px;
@@ -425,17 +426,22 @@ img.projectImage:hover {
 }
 
 
-.projectTitle, .projectHeading {
+.projectTitle {
   text-align: center;
 }
+
+.sectionHeading {
+  text-align: center;
+}
+
 
 p.projectDescription {
   text-align: center;
-  font-size: calc(16px + 0.1vw);
+  font-size: calc(16px + 0.15vw);
 }
 
 p {
-  font-size: calc(16px + 0.3vw);
+  font-size: calc(16px + 0.15vw);
 }
 
 h1 {
@@ -508,6 +514,10 @@ img {
   width: 180px;
   padding: 10px 0;
   padding-bottom: 50px;
+}
+
+.anslab {
+  width: 320px;
 }
 
 .meBits {
