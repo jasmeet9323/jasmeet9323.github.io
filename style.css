@@ -593,3 +593,10 @@ img {
   vertical-align: middle;
   text-align: center;
 }
+
+.codeIcon {
+  display: block; text-align: center;
+  font-size: 2em;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
