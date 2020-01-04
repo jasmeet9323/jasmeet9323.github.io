@@ -202,7 +202,41 @@ li {
   background-size: cover;
   height: 100%;
   width: 100%;
+}
 
+.resumeBackground {
+  background-attachment: scroll;
+  position: relative;
+  top: 0; bottom: 0;left: 0;right: 0;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  vertical-align: middle;
+
+  height: 100%;
+  width: 100%;
+}
+
+.findResume {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+}
+
+p.biggerText {
+  font-size: calc(20px + 0.2vw);
+}
+
+.myResume {
+  color: #fff;
+}
+
+#resume {
+  background-color: #333;
 }
 
 .backgroundImageElement {
