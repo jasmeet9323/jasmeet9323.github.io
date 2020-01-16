@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Audio clip of name pronounciation-->
   <audio id="myName">
     <source src="resources/jassi.mp3" type="audio/mpeg" />
@@ -21,7 +22,7 @@
     <meta name="theme-color" content="#242424">
     <link rel="icon" sizes="192x192" href="resources/avatar.png">
     <link rel="stylesheet" type="text/css" href="style.css">        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="font/fontawesome-webfont.woff2" type="text/css">
     <script src="jquery-3.4.1.min.js"></script>
     <script src="script.js"> </script>
   </head>
@@ -72,7 +73,7 @@
         </div>
 
         <div class="landing">
-          <img class="profilePic" src="img/profilePic.jpg">
+          <img class="profilePic" src="img/profilePic.jpg" alt="Profile Picture">
           <div class="bioRight">
             <h1 class="name"> Jassi </h1>
             <h4 class="subtitle"> Programmer, Graduate Student</h4>
@@ -92,10 +93,10 @@
               Thanks for visiting me at one corner of the world wide web! I am a programmer and I like to work on interesting new problems. I have been lucky to work on fascinating algorithms in various projects I pursued. Feel free to browse through my work to know me better <i class="fa fa-smile-o" style="font-size:16px"></i>
             </p>
             <ul class="socialLinks">
-              <li class="listIcon"> <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b" target="_blank" data-original-title="LinkedIn"> <i class="fa fa-linkedin fa-3x"></i> </a> </li>
-              <li class="listIcon"> <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank" data-original-title="Github"> <i class="fa fa-github fa-3x"></i> </a> </li>
+              <li class="listIcon"> <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b" target="_blank" data-original-title="LinkedIn"> <i class="fa fa-linkedin fa-3x">LinkedIn</i> </a> </li>
+              <li class="listIcon"> <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank" data-original-title="Github"> <i class="fa fa-github fa-3x">Github</i> </a> </li>
               <li class="listIcon">
-                <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
+                <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x" aria-hidden="true">Email</i>
                 </a>
               </li>
             </ul>
@@ -108,7 +109,7 @@
       <div id="aboutMe" class="bio">
         <div class="container">
           <h3 class="sectionHeading">About Me</h3>
-          <img src="resources/avatar.png" class="avatar">
+          <img src="resources/avatar.png" class="avatar" alt="avatar">
           <p class="meBits">
             I am a Master's in Applied Science student at the University of British Columbia. As a part of being in thesis based graduate program, I am focused on working in Computational Geometry. Specifically, I develop algorithms for mesh generation, which is basically discretizing a body into smaller bodies.
             <br><br>
@@ -127,7 +128,7 @@
         <img src="img/workIcon.png" class="avatar" style="padding-left: 20px">
         <div class="projects">
           <div class="projectCard" style="margin: 1.5em 1em">
-            <a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank"><img src="img/anslab.jpg" class="avatar anslab"></a>
+            <a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank"><img src="img/anslab.jpg" class="avatar anslab" alt="ANSLab" /></a>
             <p class="projectDescription">
               I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant Anisotropic Meshes.
               <br><br>
@@ -169,7 +170,7 @@
               I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab target="_blank">ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
             </p>
             <p class="projectDescription">
-              I presented my work at <a href="https://www.aiaa.org/SciTech?SSO=Y" target="_blank">AIAA Scitech Forum 2020</a>. The paper can be found <a href="https://doi.org/10.2514/6.2020-0902" target="_blank">here</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf" target="_blank">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
+              I presented my work at <a href="https://www.aiaa.org/SciTech?SSO=Y" target="_blank">AIAA Scitech Forum 2020</a>. The paper can be found at AIAA Repository - <a href="https://doi.org/10.2514/6.2020-0902" target="_blank">Advancing Layer Surface Mesh Generation</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf" target="_blank">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
             </p>
 
             <div class="rowProjectPhoto">
@@ -281,7 +282,7 @@
       <!-- Resume -->
       <div id="resume">
         <div class="resumeBackground">
-          <img class="blur backgroundImageElement" src="img/background/starryNightHigh.jpg" style="width">
+          <img class="blur backgroundImageElement" src="img/background/starryNightHigh.jpg" style="width" alt="backgroundImage">
 
           <div class="findResume">
             <p class="aboutMeFrontPage biggerText">
