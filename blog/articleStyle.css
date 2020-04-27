@@ -7,6 +7,7 @@ body {
 }
 
 article {
+  transform: translateZ(0);
   -webkit-transform: translateZ(0);
   position: relative;
   margin-bottom: 120px;
@@ -64,8 +65,10 @@ pre {
   width: 100%;
   transition: all 200ms ease-out;
   -webkit-transition: all 200ms ease-out;
-  min-height: 95vh;
+  min-height: 80vh;
   height: 95%;
+  margin-top: 63px;
+  margin-bottom: 1em;
 }
 
 #banner div.fig {
@@ -84,6 +87,7 @@ pre {
   background-position: 50% 20%;
   background-size: cover;
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 @media only screen and (max-width: 1250px) {
