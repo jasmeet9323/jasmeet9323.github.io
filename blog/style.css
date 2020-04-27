@@ -68,6 +68,12 @@ h6 {
   background: rgba(0, 0, 0, 0.8);
 }
 
+@media only screen and (max-width: 640px) {
+  .nav {
+    width: 640px;
+  }
+}
+
 .navWrapper {
   width: 80%;
   margin: auto;
@@ -107,7 +113,7 @@ h6 {
 
 .menu p,
 .search p {
-  color:#f5f4f0;
+  color: #f5f4f0;
   font-size: 26px;
 }
 
