@@ -50,14 +50,39 @@
                 </p>
                 <p style="padding: 1em;">
                     A <b>mesh</b> is a geometrical discretization of a domain that consists of (a) a collection
-                    of mesh entities M<sub>i</sub> of controlled size and distribution and (b) topological
-                    relationships or
-                    adjacencies forming the graph of the mesh. The mesh M covers Ω with neither overlaps nor holes.
+                    of mesh entities of controlled size and distribution and (b) topological
+                    relationships or adjacencies forming the graph of the mesh. The mesh covers the domain with neither
+                    overlaps nor holes.
                 </p>
                 <p>
-                    To solve for the flow over an airplane wing computationally, one
-                    has to define a volume mesh of the domain. The volume mesh
+                    To solve for the flow over an airplane wing computationally, one has to define a volume mesh of the
+                    domain. The volume mesh needs a surface mesh to serve as its starting point. Hence, generating a
+                    surface mesh is the first step towards generating a valid volume mesh. In my
+                    <a href="https://open.library.ubc.ca/cIRcle/collections/ubctheses/24/items/1.0389973">
+                        master's thesis</a>, I developed a method to generate quadrilateral dominant anisotropic mesh
+                    automatically using an input surface triangulation. In this blog post, I write the subroutines I use
+                    to develop such a mesh.
                 </p>
+                <h3>Geometry Import</h3>
+                <p>
+                    Usually, the surface mesh generation algorithm needs a geometrical representation of the solid body
+                    that
+                    is required to be meshed. Representing solid bodies as a collection of their <i>boundaries</i> (<a
+                        href="https://en.wikipedia.org/wiki/Boundary_representation">B-Rep</a>) is quite common. Hence,
+                    solid bodies are represented by the elements which form these boundaries. For example, a cube may be
+                    stored as a collection of six squares which form it. For complex three dimenstional bodies, such as the
+                    wing of an airplane, it is common to use small triangular elements to represent it.
+                </p>
+                <p>
+
+                </p>
+                <h3>Surface Segmentation</h3>
+                <h3>Point insertion and reconnection</h3>
+                <h3>Front recovery</h3>
+                <h3>Aspect ratio Control</h3>
+                <h3>Combining triangular elements to quads</h3>
+                <h3>Collision handling</h3>
+                <h3>Final Mesh</h3>
             </section>
         </article>
     </div>
