@@ -16,12 +16,22 @@
 	<div class="container header">
 		<div class="name">
 			<h1>
-				<a href="https://jasmeet9323.github.io">Jasmeet Singh</a>
-			</h1><br>
+				<a href="https://jasmeet9323.github.io" style="text-decoration: none;">Jasmeet Singh</a>
+			</h1>
 			<!--<a href="mailto:jasmeet.singh.mec11@iitbhu.ac.in" target="_top">jasmeet.singh.mec11@iitbhu.ac.in</a>-->
 		</div>
 		<div class="downloadPDF">
-			<button id="pdfDownload" type="button" , autofocus, class="button buttonWhite", onclick="location.href='https://jasmeet9323.github.io/resume/resume_Jasmeet_Singh.pdf';">Download PDF</button>
+			<button id="pdfDownload" type="button" , autofocus, class="button buttonWhite" ,
+				onclick="location.href='resume_Jasmeet_Singh.pdf';">Download
+				PDF</button>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="links">
+			<a href="https://jasmeet9323.github.io">jasmeet9323.github.io</a>
+			<a href="https://linkedin.com/in/jasmeet9323">linkedin.com/in/jasmeet9323</a>
+			<a href="mailto:jasmeet.singh.mec11@iitbhu.ac.in">jasmeet.singh.mec11@iitbhu.ac.in</a>
 		</div>
 	</div>
 
@@ -30,57 +40,61 @@
 			<h2>Education</h2>
 			<ul>
 				<li>MASc, Mechanical Engg., University of British Columbia</li>
-				<span class="info">Sept 2017 - Present</span>
+				<span class="info fade">Sept 2017 - May 2020</span>
 				<li>B.Tech, Mechanical Engg., IIT BHU, Varanasi</li>
-				<span class="info">July 2011 - May 2015</span>
+				<span class="info fade">July 2011 - May 2015</span>
 			</ul>
 
 			<h2>Contact</h2>
 			<ul>
-				<li>jasmeet.singh.mec11<emph>at</emph>iitbhu.ac.in</li>
+				<li><a href="mailto:jasmeet.singh.mec11@iitbhu.ac.in">jasmeet.singh.mec11@iitbhu.ac.in</li></a>
 				<li><a href="https://jasmeet9323.github.io/">jasmeet9323.github.io</a></li>
 				<li><a href="https://github.com/jasmeet9323">github.com/jasmeet9323</a></li>
-				<li>+1 778 - 798 - 9323</li>
+				<li>+1 778 798 9323</li>
 			</ul>
 
 			<h2>Skills</h2>
 			<ul>
-				<li>Professional experience with C++, <span>&#183;</span>
-					Python, MATLAB </li>
+				<li>Professional experience with C++, Python, MATLAB </li>
+				<li>Project experience with HTML, CSS, JavaScript, Firebase, </li>
 				<li>Experience in Numerical Simulations</li>
 				<li>Experience in Algorithm Development for Geometry Discretization and Visualization</li>
-				<li>Passion for disruptive methodologies in Numerical Simulation and Graphics problems</li>
+				<!--<li>Passion for disruptive methodologies in Numerical Simulation and Graphics problems</li>-->
 			</ul>
 
 			<h2>Awards</h2>
 			<table class="awards">
 				<tr>
-					<td>2019</td>
-					<td>Best Student Paper Award - AIAA SciTech 2020</td>
+					<td><a href="Best_Paper_Award_Jasmeet_Singh.pdf" target="_blank">
+							Best Student Paper Award - AIAA
+							SciTech 2020
+						</a>
+					</td>
+					<td class="fade">2019</td>
 				</tr>
 				<tr>
-					<td>2018</td>
 					<td>Continuing Merit Award - UBC</td>
+					<td class="fade">2018</td>
 				</tr>
 				<tr>
-					<td>2017</td>
 					<td>Department Entrance Scholarship - UBC</td>
+					<td class="fade">2017</td>
 				</tr>
 				<tr>
-					<td>2015</td>
 					<td>Merit-Cum Means Sholarship | 4 years of Bachelor's - IIT, Varanasi</td>
+					<td class="fade">2015</td>
 				</tr>
 				<tr>
-					<td>2013</td>
 					<td>Unilever Future Leaders Internship Fellowship - Pan IIT</td>
+					<td class="fade">2013</td>
 				</tr>
 				<tr>
-					<td>2011</td>
 					<td>99.3 percentile in IIT - Joint Entrance Exam</td>
+					<td class="fade">2011</td>
 				</tr>
 				<tr>
-					<td>2011</td>
 					<td>99.7 percentile in All India Engineering Entrance Examination</td>
+					<td class="fade">2011</td>
 				</tr>
 				<!--<tr>
 					<td>100%</td>
@@ -91,13 +105,14 @@
 			<h2>Leadership</h2>
 			<table class="leadership">
 				<tr>
-					<td>2018-2019</td>
 					<td>VP, Communications - <a href="http://igsnubc.com/">Interdisciplinary Graduate Student Network
 							(iGSN)</a></td>
+					<td class="fade">2018-2019</td>
+
 				</tr>
 				<tr>
-					<td>2014-2015</td>
 					<td>Co-Founder and Core Member - Career Guidance Forum, IIT, Varanasi</td>
+					<td class="fade">2014-2015</td>
 				</tr>
 			</table>
 		</div>
@@ -108,35 +123,42 @@
 
 				<div class="experienceEntry">
 					<h4 class="inline bold"><a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab, UBC</a> | </h4>
-					<h4 class="inline">Graduate Research Assistant</h4> <br>
-					<h5 class="inline">Sep-2017 - Present |</h5>
+					<h4 class="inline">Research Assistant - Mesh Generation Software</h4> <br>
+					<h5 class="inline">Sep-2017 - May 2020 |</h5>
 					<h5 class="inline">Vancouver, BC</h5>
-
 					<ul>
 						<li>
-							Created a surface mesh generator capable of producing quad-dominant, anisotropic mesh
-							automatically from a triangulation of a surface.
+							Created a C++ surface mesh generation application (EDAMSurf) to produce surface meshes
+							automatically from a given triangulation.
 						</li>
 						<li>
-							The generated mesh unlike before, can directly be fed into a 3-D mesh generator, refiner and
-							fluid flow solvers. Moreover, it makes the solverrobust and increases its accuracy by 30%.
-							Primary coding language: C/C++ (85%), Python(15%)
+							Features in the mesh such as quad-dominance and anisotropy make the mesh suitable to serve
+							as an input
+							to 3D mesh generator and produces more accurate an robust fluid flow simulation
+							results.
+						</li>
+						<li>
+							Worked on a large project (200,000 lines of code and 5 team members) using Jenkins CI and
+							Git.
+							Wrote unit tests and regression tests for robust application development.
 						</li>
 					</ul>
 				</div>
 
 				<div class="experienceEntry">
 					<h4 class="inline bold">CGAL, Google Summer of Code | </h4>
-					<h4 class="inline">Student Developer</h4> <br>
+					<h4 class="inline">Software Development Intern</h4> <br>
 					<h5 class="inline">May 2019 - July 2019 |</h5>
 					<h5 class="inline">Vancouver, BC</h5>
 
 					<ul>
 						<li>
-							In this Google Summer of Code(GSoC) project, I develop basic viewers for various data
-							structures in CGAL (Computational Geometry Algorithms Libraty). These basic viewers are
-							basically global functions that allow 3D visualization of CGAL data-structures. They are
-							very useful in order to visualize the result of an algorithm and can help to debug some
+							Developed basic viewers for various data structures in Computational Geometry Algorithms
+							Libraty (CGAL) using C++, Git, GitHub, template metaprogramming concepts.
+						</li>
+						<li>
+							Basic viewers that I wrote are global functions that visualize 3D data-structures of CGAL.
+							They help to visualize the result of an algorithm and can other developers to debug their
 							code.
 						</li>
 						<li>
@@ -149,28 +171,27 @@
 
 				<div class="experienceEntry">
 					<h4 class="inline bold">Indian Institute of Science | </h4>
-					<h4 class="inline">Research Assistant</h4> <br>
+					<h4 class="inline">Research Assistant - Interdisciplinary Work</h4> <br>
 					<h5 class="inline">Jan 2016 - July 2017 |</h5>
 					<h5 class="inline">Vancouver, BC</h5>
 
 					<ul>
 						<li>
-							Developed an algorithm to convert spatial flame fronts into connected graphs.
-						</li>
-						<li>
+							Developed an algorithm to convert spatial flame fronts into connected graphs using MATLAB.
 							Performed network analysis on the constructed graphs to infer flame front characteristics.
 						</li>
 						<li>
-							This study produced state of the art highly enriched graphicalrepresentation of flame front
-							and improved flame prediction by 20%.
+							This study produced state of the art highly enriched graphical representation of flame
+							fronts
+							and was a pioneering interdisciplinary work in complex networks and combustion dynamics.
 						</li>
 					</ul>
 				</div>
 
 				<div class="projects">
-					<h2>Other Projects</h2>
+					<h2>Projects</h2>
 					<div class="projectEntry">
-						<h4 class="bold">Dynamic Kelvinlets</h4>
+						<h4 class="bold">Secondary Animation using Dynamic Kelvinlets</h4>
 						<h5 class="inline">Digital Humans Course Project | </h5>
 						<h5 class="inline">Sep 2019 - Dec 2019</h5>
 
@@ -185,7 +206,19 @@
 							</li>
 							<li>
 								The implementation runs in about real time (55.6 FPS) and requires no information about
-								the geometry of the object being animated.
+								the geometry of the object being animated. Technologies used - C++, Git, OpenFrameWorks
+								(OpenGL).
+							</li>
+						</ul>
+					</div>
+					<div class="projectEntry">
+						<h4 class="bold">Canvas Drawing Application</h4>
+						<h5 class="inline">Side Project | </h5>
+						<h5 class="inline">March 2020 - April 2020</h5>
+						<ul>
+							<li>
+								Created a canvas drawing application where multiple people can draw at the same time
+								on a canvas using Linux, Apache2, Php, and Google Firebase infrastructure.
 							</li>
 						</ul>
 					</div>
