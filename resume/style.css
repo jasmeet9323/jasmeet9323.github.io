@@ -131,6 +131,7 @@ h2 {
 }
 
 ul {
+  margin-block-start: 0.25em;
   padding-left: 20px;
 }
 
@@ -179,4 +180,9 @@ span.info {
 
 .links {
   margin-left: 0.2em;
+}
+
+.projectLinks {
+  padding-left: 1em;
+  display: inline;
 }

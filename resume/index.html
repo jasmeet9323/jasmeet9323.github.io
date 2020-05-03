@@ -13,6 +13,7 @@
 
 <body id="body">
 
+	<!-- Title and Download Link -->
 	<div class="container header">
 		<div class="name">
 			<h1>
@@ -27,6 +28,7 @@
 		</div>
 	</div>
 
+	<!-- Contact Links -->
 	<div class="container">
 		<div class="links">
 			<a href="https://jasmeet9323.github.io">jasmeet9323.github.io</a>
@@ -35,7 +37,10 @@
 		</div>
 	</div>
 
+	<!-- Content -->
 	<div class="container">
+
+		<!-- Sidebar -->
 		<div class="sidebar">
 			<h2>Education</h2>
 			<ul>
@@ -56,7 +61,7 @@
 			<h2>Skills</h2>
 			<ul>
 				<li>Professional experience with C++, Python, MATLAB </li>
-				<li>Project experience with HTML, CSS, JavaScript, Firebase, </li>
+				<li>Project experience with HTML, CSS, JavaScript, SQL</li>
 				<li>Experience in Numerical Simulations</li>
 				<li>Experience in Algorithm Development for Geometry Discretization and Visualization</li>
 				<!--<li>Passion for disruptive methodologies in Numerical Simulation and Graphics problems</li>-->
@@ -105,7 +110,7 @@
 			<h2>Leadership</h2>
 			<table class="leadership">
 				<tr>
-					<td>VP, Communications - <a href="http://igsnubc.com/">Interdisciplinary Graduate Student Network
+					<td>VP, Communications - <a href="http://igsnubc.com/" target="_blank">Interdisciplinary Graduate Student Network
 							(iGSN)</a></td>
 					<td class="fade">2018-2019</td>
 
@@ -117,12 +122,13 @@
 			</table>
 		</div>
 
+		<!-- Main Material - Experience, Projects, Publications -->
 		<div class="main">
 			<div class="experience">
 				<h2>Experience</h2>
 
 				<div class="experienceEntry">
-					<h4 class="inline bold"><a href="http://tetra.mech.ubc.ca/projects/ANSLab">ANSLab, UBC</a> | </h4>
+					<h4 class="inline bold"><a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank">ANSLab, UBC</a> | </h4>
 					<h4 class="inline">Research Assistant - Mesh Generation Software</h4> <br>
 					<h5 class="inline">Sep-2017 - May 2020 |</h5>
 					<h5 class="inline">Vancouver, BC</h5>
@@ -150,7 +156,19 @@
 					<h4 class="inline">Software Development Intern</h4> <br>
 					<h5 class="inline">May 2019 - July 2019 |</h5>
 					<h5 class="inline">Vancouver, BC</h5>
-
+					<div class="projectLinks">
+						<h5 class="inline"><a
+								href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/" target="_blank">Website</a>
+						</h5>
+						<h5 class="inline">
+							<a href="https://github.com/CGAL/cgal/issues/4168" target="_blank">Github</a>
+						</h5>
+						<h5 class="inline">
+							<a
+								href="https://docs.google.com/document/d/1TwqnpziaPBAaDMi_omAXvpFIYoVeuJGTsWFSHHObwsw/edit?usp=sharing" target="_blank">Docs
+							</a>
+						</h5>
+					</div>
 					<ul>
 						<li>
 							Developed basic viewers for various data structures in Computational Geometry Algorithms
@@ -173,7 +191,7 @@
 					<h4 class="inline bold">Indian Institute of Science | </h4>
 					<h4 class="inline">Research Assistant - Interdisciplinary Work</h4> <br>
 					<h5 class="inline">Jan 2016 - July 2017 |</h5>
-					<h5 class="inline">Vancouver, BC</h5>
+					<h5 class="inline">Bangalore, India</h5>
 
 					<ul>
 						<li>
@@ -188,64 +206,87 @@
 					</ul>
 				</div>
 
-				<div class="projects">
-					<h2>Projects</h2>
-					<div class="projectEntry">
-						<h4 class="bold">Secondary Animation using Dynamic Kelvinlets</h4>
-						<h5 class="inline">Digital Humans Course Project | </h5>
-						<h5 class="inline">Sep 2019 - Dec 2019</h5>
+			</div>
 
-						<ul>
-							<li>
-								Implemented a procedure to automatically add secondary motion to objects given skeletal
-								animation keyframes for a model using linear blend skinning.
-							</li>
-							<li>
-								The algorithm solves elastodynamics equations to compute material response towards
-								elastodynamic forces.
-							</li>
-							<li>
-								The implementation runs in about real time (55.6 FPS) and requires no information about
-								the geometry of the object being animated. Technologies used - C++, Git, OpenFrameWorks
-								(OpenGL).
-							</li>
-						</ul>
+			<!-- Projects -->
+			<div class="projects">
+				<h2>Projects</h2>
+				<div class="projectEntry">
+					<h4 class="bold">Secondary Animation using Dynamic Kelvinlets</h4>
+					<h5 class="inline">Digital Humans Course Project | </h5>
+					<h5 class="inline">Sep 2019 - Dec 2019</h5>
+					<div class="projectLinks">
+						<h5 class="inline">
+							<a href="https://github.com/davepagurek/DynamicKelvinlets" target="_blank">Github</a>
+						</h5>
+						<h5 class="inline">
+							<a
+								href="https://github.com/davepagurek/DynamicKelvinlets/blob/master/report/report.pdf" target="_blank">Report
+							</a>
+						</h5>
 					</div>
-					<div class="projectEntry">
-						<h4 class="bold">Canvas Drawing Application</h4>
-						<h5 class="inline">Side Project | </h5>
-						<h5 class="inline">March 2020 - April 2020</h5>
-						<ul>
-							<li>
-								Created a canvas drawing application where multiple people can draw at the same time
-								on a canvas using Linux, Apache2, Php, and Google Firebase infrastructure.
-							</li>
-						</ul>
-					</div>
-				</div>
 
-				<div class="publications">
-					<h2>Publications</h2>
 					<ul>
 						<li>
-							<a href="https://doi.org/10.2514/6.2020-0902">
-								Singh J., Olliver Gooch, Carl F. "Advancing Layer Surface Mesh Generation." AIAA Scitech
-								2020 Forum. 2020.
-							</a>
+							Implemented a procedure to automatically add secondary motion to objects given skeletal
+							animation keyframes for a model using linear blend skinning.
 						</li>
 						<li>
-							<a href="https://doi.org/10.1063/1.4980135">
-								Singh, Jasmeet, et al. "Network structure of turbulent premixed flames." Chaos: An
-								Interdisciplinary Journal of Nonlinear Science 27.4 (2017): 043107.
-							</a>
+							The algorithm solves elastodynamics equations to compute material response towards
+							elastodynamic forces.
+						</li>
+						<li>
+							The implementation runs in about real time (55.6 FPS) and requires no information about
+							the geometry of the object being animated. Technologies used - C++, Git, OpenFrameWorks
+							(OpenGL).
 						</li>
 					</ul>
-					<div class="publicationEntry">
-
-					</div>
 				</div>
+				<div class="projectEntry">
+					<h4 class="bold">Canvas Drawing Application</h4>
+					<h5 class="inline">Side Project | </h5>
+					<h5 class="inline">March 2020 - April 2020</h5>
+					<div class="projectLinks">
+						<h5 class="inline">
+							<a href="https://keepdrawing.xyz" target="_blank">Website</a>
+						</h5>
+						<h5 class="inline">
+							<a href="https://github.com/jasmeet9323/keepDrawing" target="_blank">Github</a>
+						</h5>
+					</div>
+					<ul>
+						<li>
+							Created a canvas drawing application where multiple people can draw at the same time
+							on a canvas using Linux, Apache2, Php, and Google Firebase infrastructure.
+						</li>
+					</ul>
+				</div>
+			</div>
 
-
+			<!-- Publications -->
+			<div class="publications">
+				<h2>Publications</h2>
+				<ul>
+					<li>
+						<a href="https://doi.org/10.2514/6.2020-0902" target="_blank">
+							Singh J., Olliver Gooch, Carl F. "Advancing Layer Surface Mesh Generation." AIAA Scitech
+							2020 Forum. 2020.</a>
+						<b>Best Student Paper Award.</b>
+					</li>
+					<li>
+						<a href="https://doi.org/10.1063/1.4980135" target="_blank">
+							Singh, J., Belur Vishwanath, R., Chaudhuri, S., & Sujith, R. I. (2017). Network structure of
+							turbulent premixed flames. Chaos: An Interdisciplinary Journal of Nonlinear Science, 27(4),
+							043107.
+						</a>
+					</li>
+					<li>
+						<a href="https://dx.doi.org/10.14288/1.0389973" target="_blank">
+							Singh, J. (2020). Entire domain advancing layer surface mesh (EDAMSurf) generation (Masters
+							dissertation, University of British Columbia).
+						</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
