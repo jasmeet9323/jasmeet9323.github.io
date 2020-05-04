@@ -80,7 +80,7 @@ body {
   -ms-flex-order: 2;
   order: 2;
   box-sizing: border-box;
-  flex-basis: 30%;
+  flex-basis: 28%;
 }
 
 
@@ -92,7 +92,7 @@ body {
   -ms-flex-order: 1;
   order: 1;
   box-sizing: border-box;
-  flex-basis: 70%;
+  flex-basis: 72%;
 }
 
 
@@ -107,7 +107,7 @@ h1 {
   font-size: 44px;
   font-family: "Josefin Sans", Georgia, serif;
   font-weight: bold;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0 0;
   color: black;
 }
 
