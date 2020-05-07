@@ -1,6 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124304631-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-124304631-1');
+  </script>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Audio clip of name pronounciation-->
@@ -15,284 +26,340 @@
 
   <audio id="myFullName2">
     <source src="resources/singh.mp3" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+    Your browser does not support the audio element.
+  </audio>
 
-    <title>Jasmeet Singh</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#242424">
-    <link rel="icon" sizes="192x192" href="resources/avatar.png">
-    <link rel="stylesheet" type="text/css" href="style.css">        
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
-    <script src="jquery-3.4.1.min.js"></script>
-    <script src="script.js"> </script>
-  </head>
-  <body>
+  <title>Jasmeet Singh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#242424">
+  <link rel="icon" sizes="192x192" href="resources/avatar.png">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    type="text/css">
+  <script src="jquery-3.4.1.min.js"></script>
+  <script src="script.js"> </script>
+</head>
 
-    <div class="wrapper">
+<body>
 
-      <!-- Icon for Sidebar Toggle -->
-      <a id="menuToggle" class="button buttonLg toggle" onclick="showSidebar()">
-        <i class="fa fa-bars"></i>
-      </a>
-      <!-- Icon ends -->
+  <div class="wrapper">
 
-      <!-- Sidebar -->
-      <div id="sidebar">
-        <ul class="sidebarNav">
-          <a id="menuClose" onclick="hideSidebar()" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
-            <i class="fa fa-times"></i>
-          </a>
-          <li class="sidebarName">
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#aboutMe">About Me</a>
-          </li>
-          <li>
-            <a href="#work">Work</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="blog/blog.html">Blog</a>
-          </li>
-          <li>
-            <a href="resume/index.html" target="_blank">Resume</a>
-          </li>
-        </ul>
+    <!-- Icon for Sidebar Toggle -->
+    <a id="menuToggle" class="button buttonLg toggle" onclick="showSidebar()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- Icon ends -->
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+      <ul class="sidebarNav">
+        <a id="menuClose" onclick="hideSidebar()" class="button buttonDefault buttonLg pullRight toggle toggleOverride">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebarName">
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#aboutMe">About Me</a>
+        </li>
+        <li>
+          <a href="#work">Work</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="blog/blog.html">Blog</a>
+        </li>
+        <li>
+          <a href="resume/index.html" target="_blank">Resume</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Sidebar Ends -->
+
+    <!-- Header page - Background Image and Intro -->
+    <div id="home" class="header">
+      <h2 class="locationLabel">Lake Roundabout, New Zealand
+      </h2>
+      <div class="backgroundImage">
+        <img class="backgroundImageElement" src="img/background/starryNightHigh.jpg">
       </div>
-      <!-- Sidebar Ends -->
 
-      <!-- Header page - Background Image and Intro -->
-      <div id="home" class="header">
-        <h2 class="locationLabel">Lake Roundabout, New Zealand
-        </h2>
-        <div class="backgroundImage" >
-          <img class="backgroundImageElement" src="img/background/starryNightHigh.jpg">
-        </div>
-
-        <div class="landing">
-          <img class="profilePic" src="img/profilePic.jpg" alt="Profile Picture">
-          <div class="bioRight">
-            <h1 class="name"> Jassi </h1>
-            <h4 class="subtitle"> Programmer, Graduate Student</h4>
-            <p class="aboutMeFrontPage">
-              Hi! I am 
-              <a onclick="playFullName1()" class="lightYellow">
-                <i class="fa fa-volume-up" style="font-size: 12px"></i>
-                Jasmeet 
-              </a>
-              <a onclick="playFullName2()" class="lightYellow">
+      <div class="landing">
+        <img class="profilePic" src="img/profilePic.jpg" alt="Profile Picture">
+        <div class="bioRight">
+          <h1 class="name"> Jassi </h1>
+          <h4 class="subtitle"> Programmer, Graduate Student</h4>
+          <p class="aboutMeFrontPage">
+            Hi! I am
+            <a onclick="playFullName1()" class="lightYellow">
+              <i class="fa fa-volume-up" style="font-size: 12px"></i>
+              Jasmeet
+            </a>
+            <a onclick="playFullName2()" class="lightYellow">
               Singh</a>.
-              People call me 
-              <a onclick="playPetName()" class="lightYellow"> 
-                <i class="fa fa-volume-up" style="font-size: 12px"></i>
+            People call me
+            <a onclick="playPetName()" class="lightYellow">
+              <i class="fa fa-volume-up" style="font-size: 12px"></i>
               Jassi</a>.
-              <br>
-              Thanks for visiting me at one corner of the world wide web! I am a programmer and I like to work on interesting new problems. I have been lucky to work on fascinating algorithms in various projects I pursued. Feel free to browse through my work to know me better <i class="fa fa-smile-o" style="font-size:16px"></i>
-            </p>
-            <ul class="socialLinks">
-              <li class="listIcon"> <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b" target="_blank" data-original-title="LinkedIn"> <i class="fa fa-linkedin fa-3x"></i> </a> </li>
-              <li class="listIcon"> <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank" data-original-title="Github"> <i class="fa fa-github fa-3x"></i> </a> </li>
-              <li class="listIcon">
-                <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+            <br>
+            Thanks for visiting me at one corner of the world wide web! I am a programmer and I like to work on
+            interesting new problems. I have been lucky to work on fascinating algorithms in various projects I pursued.
+            Feel free to browse through my work to know me better <i class="fa fa-smile-o" style="font-size:16px"></i>
+          </p>
+          <ul class="socialLinks">
+            <li class="listIcon"> <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b"
+                target="_blank" data-original-title="LinkedIn"> <i class="fa fa-linkedin fa-3x"></i> </a> </li>
+            <li class="listIcon"> <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank"
+                data-original-title="Github"> <i class="fa fa-github fa-3x"></i> </a> </li>
+            <li class="listIcon">
+              <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x"
+                  aria-hidden="true"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- Header page ends-->
+    </div>
+    <!-- Header page ends-->
 
-      <!-- Bio -->
-      <div id="aboutMe" class="bio">
-        <div class="container">
-          <h3 class="sectionHeading">About Me</h3>
-          <img src="resources/avatar.png" class="avatar" alt="avatar">
-          <p class="meBits">
-            I am a Master's in Applied Science student at the University of British Columbia. As a part of being in thesis based graduate program, I am focused on working in Computational Geometry. Specifically, I develop algorithms for mesh generation, which is basically discretizing a body into smaller bodies.
+    <!-- Bio -->
+    <div id="aboutMe" class="bio">
+      <div class="container">
+        <h3 class="sectionHeading">About Me</h3>
+        <img src="resources/avatar.png" class="avatar" alt="avatar">
+        <p class="meBits">
+          I am a Master's in Applied Science student at the University of British Columbia. As a part of being in thesis
+          based graduate program, I am focused on working in Computational Geometry. Specifically, I develop algorithms
+          for mesh generation, which is basically discretizing a body into smaller bodies.
+          <br><br>
+          I graduated from IIT (BHU), Varanasi in 2015 with a Bachelor in Technology in Mechanical Engineering. My
+          background in applied science and engineering has given me strong logical thinking capabilities. With time, I
+          have used these skills to develop programming and algorithm development acumen.
+          <br><br>
+          I like to read. Self-help books and autiobiographies are on the top of my reading lists. I also like watching
+          thriller movies.
+        </p>
+      </div>
+    </div>
+    <!-- Bio Ends -->
+
+    <!-- Work -->
+    <div id="work">
+      <!-- ANSLab -->
+      <h3 class="sectionHeading">Work</h3>
+      <img src="img/workIcon.png" class="avatar" style="padding-left: 20px">
+      <div class="projects">
+        <div class="projectCard" style="margin: 1.5em 1em">
+          <a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank"><img src="img/anslab.jpg"
+              class="avatar anslab" alt="ANSLab" /></a>
+          <p class="projectDescription">
+            I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab"
+              target="_blank">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant
+            Anisotropic Meshes.
             <br><br>
-            I graduated from IIT (BHU), Varanasi in 2015 with a Bachelor in Technology in Mechanical Engineering. My background in applied science and engineering has given me strong logical thinking capabilities. With time, I have used these skills to develop programming and algorithm development acumen.
+            I wrote an automatic and fast method to discretize the surface of geometric domains (bodies) in a way that
+            they can be used to generate volume meshes (volumetric discretization).
             <br><br>
-            I like to read. Self-help books and autiobiographies are on the top of my reading lists. I also like watching thriller movies.
+            To know about my work and find out why it is so important, browse the <a href="#advancingLayer">project
+              description</a>.
+          </p>
+        </div>
+        <!-- JetPECL IISc -->
+        <div class="projectCard">
+          <a href="https://jetpecl.wordpress.com/" target="_blank"><img src="img/iisc.png" class="avatar"
+              style="width: 160px"></a>
+          <p class="projectDescription">
+            I worked at Propulsion and Energy Conversion Laboratories, IISc, Bangalore (<a
+              href="https://jetpecl.wordpress.com/" target="_blank">now at University of Toronto</a>) for one and a half
+            years.
+            <br><br>
+            I pursued a highly interdisciplinary project wherein I found correlations between flame propagation and <a
+              href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex network</a> theory. Here, I
+            developed an algorithm to convert spatial flame fronts to complex networks.
+            <br><br>
+            Know more about my work in the project descrition <a href="#networkStructure">here</a>.
           </p>
         </div>
       </div>
-      <!-- Bio Ends -->
+    </div>
+    <!-- Work Ends -->
 
-      <!-- Work -->
-      <div id="work">
-        <!-- ANSLab -->
-        <h3 class="sectionHeading">Work</h3>
-        <img src="img/workIcon.png" class="avatar" style="padding-left: 20px">
-        <div class="projects">
-          <div class="projectCard" style="margin: 1.5em 1em">
-            <a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank"><img src="img/anslab.jpg" class="avatar anslab" alt="ANSLab" /></a>
-            <p class="projectDescription">
-              I work at Advanced Numerical Simulations Laboratory (<a href="http://tetra.mech.ubc.ca/projects/ANSLab" target="_blank">ANSLab</a>), University of British Columbia to generate Unstructured Quad-Dominant Anisotropic Meshes.
-              <br><br>
-              I wrote an automatic and fast method to discretize the surface of geometric domains (bodies) in a way that they can be used to generate volume meshes (volumetric discretization).
-              <br><br>
-              To know about my work and find out why it is so important, browse the <a href="#advancingLayer">project description</a>.
-            </p>
-          </div>
-          <!-- JetPECL IISc -->
-          <div class="projectCard">
-            <a href="https://jetpecl.wordpress.com/" target="_blank"><img src="img/iisc.png" class="avatar" style="width: 160px"></a>
-            <p class="projectDescription">
-              I worked at Propulsion and Energy Conversion Laboratories, IISc, Bangalore (<a href="https://jetpecl.wordpress.com/" target="_blank">now at University of Toronto</a>) for one and a half years.
-              <br><br>
-              I pursued a highly interdisciplinary project wherein I found correlations between flame propagation and <a href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex network</a> theory. Here, I developed an algorithm to convert spatial flame fronts to complex networks.
-              <br><br>
-              Know more about my work in the project descrition <a href="#networkStructure">here</a>.
-            </p>
-          </div>
-        </div>       
+    <!-- Projects -->
+    <div id="projects">
+      <div id="projectHeader">
+        <h3 class="sectionHeading">Projects</h3>
+        <div class="codeIcon">
+          <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+        </div>
       </div>
-      <!-- Work Ends -->
+      <div class="projects">
+        <div id="advancingLayer" class="projectCard">
+          <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
+          <p class="projectDescription">
+            Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis
+            project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow
+            simulations. These meshes act as the foundation for generating hex-dominant volume meshes with complete 3D
+            anisotropy.
+          </p>
+          <p class="projectDescription">
+            I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab target="_blank">ANSLab</a>, UBC to complete
+            this thesis project. The app was made a part of the in-house mesh generator <a
+              href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
+          </p>
+          <p class="projectDescription">
+            I presented my work at <a href="https://www.aiaa.org/SciTech?SSO=Y" target="_blank">AIAA Scitech Forum
+              2020</a>. The paper can be found at AIAA Repository - <a href="https://doi.org/10.2514/6.2020-0902"
+              target="_blank">Advancing Layer Surface Mesh Generation</a>. My paper received the <a
+              href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf"
+              target="_blank">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the
+            conference.
+          </p>
 
-      <!-- Projects -->
-      <div id="projects">
-        <div id="projectHeader">
-          <h3 class="sectionHeading">Projects</h3>
-          <div class="codeIcon">
-            <i class="fa fa-file-code-o fa-3x" aria-hidden="true"></i>
+          <div class="rowProjectPhoto">
+            <div class="columnProjectPhoto">
+              <img class="projectImage" src="img/nacaEndCap.png" alt="anisotropic mesh nacaEndCap"
+                style="width: 100%" />
+            </div>
+            <div class="columnProjectPhoto">
+              <img class="projectImage" src="img/nacaOblique.png" alt="anisotropic mesh nacaOblique"
+                style="width: 100%" />
+            </div>
+            <div class="columnProjectPhoto">
+              <img class="projectImage" src="img/joint.png" alt="anisotropic mesh mechanical part"
+                style="width: 100%" />
+            </div>
           </div>
         </div>
-        <div class="projects">
-          <div id="advancingLayer" class="projectCard">
-            <h4 class="projectTitle">Advancing Layer Surface Mesh Development</h4>
-            <p class="projectDescription">
-              Discretizing geometry using unstructured meshes is a vital part of any simulation. In my Master's thesis project, I wrote a mesh generator which produces anisotropic surface meshes ideal for boundary layer flow simulations. These meshes act as the foundation for generating hex-dominant volume meshes with complete 3D anisotropy.
-            </p>
-            <p class="projectDescription">
-              I worked at <a href=http://tetra.mech.ubc.ca/projects/ANSLab target="_blank">ANSLab</a>, UBC to complete this thesis project. The app was made a part of the in-house mesh generator <a href="http://tetra.mech.ubc.ca/GRUMMP/">GRUMMP</a>.
-            </p>
-            <p class="projectDescription">
-              I presented my work at <a href="https://www.aiaa.org/SciTech?SSO=Y" target="_blank">AIAA Scitech Forum 2020</a>. The paper can be found at AIAA Repository - <a href="https://doi.org/10.2514/6.2020-0902" target="_blank">Advancing Layer Surface Mesh Generation</a>. My paper received the <a href="resources/Meshing Visualization and Computational Sciences BP e-certificate.pdf" target="_blank">Best Student Paper Award</a> - Meshing Visualization and Computational Sciences for the conference.
-            </p>
 
-            <div class="rowProjectPhoto">
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/nacaEndCap.png" alt="anisotropic mesh nacaEndCap" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage" src="img/nacaOblique.png" alt="anisotropic mesh nacaOblique" style="width: 100%" />
-              </div>
-              <div class="columnProjectPhoto">
-                <img class="projectImage"src="img/joint.png" alt="anisotropic mesh mechanical part" style="width: 100%" />
+        <div class="projectCard">
+          <h4 class="projectTitle">Basic Viewers for Geometry Data Structures</h4>
+          <p class="projectDescription">
+            As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a
+              href="https://www.cgal.org/" target="_blank">CGAL</a>), I developed viewers for various geometry data
+            structures.
+            <br> <br>
+            These viewers are important to quicly visualize the result of an algorithm or to debug code. Viewers were
+            developed for several packages in the CGAL repository including Voronoi Diagram, Periodic Triangulation, Nef
+            Polyhedra and Arrangement 2D.
+            <br> <br>
+            Find more about my work and the code at <a
+              href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/" target="_blank">GSoC
+              Archive</a>.
+          </p>
+
+          <div class="rowProjectPhoto">
+            <div class="columnProjectPhoto">
+              <div class="projectImage">
+                <video width="100%" autoplay muted loop>
+                  <source src="img/GSoC1.mp4" type="video/mp4" />
+                  Voronoi Diagram Viewer Video
+                </video>
               </div>
             </div>
-          </div>
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Basic Viewers for Geometry Data Structures</h4>
-            <p class="projectDescription">
-              As a part of Google Summer of Code 2019 project at Computational Geometry Algorithms Library (<a href="https://www.cgal.org/" target="_blank">CGAL</a>), I developed viewers for various geometry data structures.
-              <br> <br>
-              These viewers are important to quicly visualize the result of an algorithm or to debug code. Viewers were developed for several packages in the CGAL repository including Voronoi Diagram, Periodic Triangulation, Nef Polyhedra and Arrangement 2D.
-              <br> <br>
-              Find more about my work and the code at <a href="https://summerofcode.withgoogle.com/archive/2019/projects/6605980580708352/" target="_blank">GSoC Archive</a>.
-            </p>
-
-            <div class="rowProjectPhoto">
-              <div class="columnProjectPhoto">
-                <div class="projectImage">
-                  <video width="100%" autoplay muted loop>
-                    <source src="img/GSoC1.mp4" type="video/mp4"/>
-                    Voronoi Diagram Viewer Video
-                  </video>
-                </div>
-              </div>
-              <div class="columnProjectPhoto">
-                <div class="projectImage">
-                  <video width="100%" autoplay muted loop>
-                    <source src="img/GSoC2.mp4" type="video/mp4" />
-                    Nef Polyhedra Viewer Video
-                  </video>
-                </div>
-              </div>
-              <div class="columnProjectPhoto">
-                <div class="projectImage">
-                  <video width="100%" autoplay muted loop>
-                    <source src="img/GSoC3.mp4" type="video/mp4" />
-                    Periodic Triangulation Viewer Video
-                  </video>
-                </div>
+            <div class="columnProjectPhoto">
+              <div class="projectImage">
+                <video width="100%" autoplay muted loop>
+                  <source src="img/GSoC2.mp4" type="video/mp4" />
+                  Nef Polyhedra Viewer Video
+                </video>
               </div>
             </div>
-          </div>
-
-          <div class="projectCard">
-            <h4 class="projectTitle">Automatic Secondary Motion: Dynamic Kelvinlets</h4>
-            <p class="projectDescription">
-              Adding secondary motion to animations is tricky for animators and waiting for another simulation to add such motion is inconvenient. Hence, a solution is to automatically add secondary motion to an object by solving the material elastodynamics equations. 
-            </p>
-
-            <p class="projectDescription">
-              Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/" target="_blank">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical technique for real-time physically based animation of virtual elastic materials. Find the implementation on <a href="https://github.com/jasmeet9323/DynamicKelvinlets" target="_blank">Github</a>.
-            </p>
-            <p class="projectDescription">
-              The implementation details and evaluation of the technique can be found in the <a href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf" target="_blank">report</a>, which was submitted as the part of a course project. Credits to <a href="davepagurek.com" target="_blank">Dave</a> for the ideas and contributions to the project.
-            </p>
-
-            <div class="rowHalf">
-              <div class="columnHalf">
-                <div class="projectImage">
-                  <video width="100%" autoplay muted loop>
-                    <source src="img/punch.mp4" type="video/mp4" />
-                    Punching Response Dynamic Kelvinlet
-                  </video>
-                </div>
-              </div>
-              <div class="columnHalf">
-                <div class="projectImage">
-                  <video width="100%" autoplay muted loop>
-                    <source src="img/stomp.mp4" type="video/mp4" />
-                    Stomping Response Dynamic Kelvinlet
-                  </video>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div id="networkStructure" class="projectCard">
-            <h4 class="projectTitle">Network Structure of Turbulent Premixed Flames</h4>
-            <p class="projectDescription">
-              In this interdisciplinary project, I had the opportunity to work on experiments in turbulent combustion as well as algorithm development. The goal of the project was to characterize turbulent premixed flame fronts using complex networks and hence, provide a framework for possible flame interaction and subsequent control.
-            </p>
-            <p class="projectDescription">
-              I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve as a framework for characterizing flame-turbulence interactions. The study was <a href="https://doi.org/10.1063/1.4980135" target="_blank">published in Chaos: An Interdisciplinary Journal of Non-Linear Science</a>.
-            </p>
-
-            <div class="rowHalf">
-              <div class="columnHalf">
-                <img class="projectImage" src="img/flameFront.png" alt="flame" style="width: 100%" />
-              </div>
-              <div class="columnHalf">
-                <img class="projectImage" src="img/complexNetwork.jpg" alt="complex network" style="width: 67%" />
+            <div class="columnProjectPhoto">
+              <div class="projectImage">
+                <video width="100%" autoplay muted loop>
+                  <source src="img/GSoC3.mp4" type="video/mp4" />
+                  Periodic Triangulation Viewer Video
+                </video>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="projectCard">
+          <h4 class="projectTitle">Automatic Secondary Motion: Dynamic Kelvinlets</h4>
+          <p class="projectDescription">
+            Adding secondary motion to animations is tricky for animators and waiting for another simulation to add such
+            motion is inconvenient. Hence, a solution is to automatically add secondary motion to an object by solving
+            the material elastodynamics equations.
+          </p>
+
+          <p class="projectDescription">
+            Inspired by the work done at <a href="https://graphics.pixar.com/library/DynaKelvinlets/"
+              target="_blank">Pixar</a>, I implemented and evaluated the quality of Dynamic Kelvinlets, a analytical
+            technique for real-time physically based animation of virtual elastic materials. Find the implementation on
+            <a href="https://github.com/jasmeet9323/DynamicKelvinlets" target="_blank">Github</a>.
+          </p>
+          <p class="projectDescription">
+            The implementation details and evaluation of the technique can be found in the <a
+              href="https://github.com/jasmeet9323/DynamicKelvinlets/blob/master/report/report.pdf"
+              target="_blank">report</a>, which was submitted as the part of a course project. Credits to <a
+              href="davepagurek.com" target="_blank">Dave</a> for the ideas and contributions to the project.
+          </p>
+
+          <div class="rowHalf">
+            <div class="columnHalf">
+              <div class="projectImage">
+                <video width="100%" autoplay muted loop>
+                  <source src="img/punch.mp4" type="video/mp4" />
+                  Punching Response Dynamic Kelvinlet
+                </video>
+              </div>
+            </div>
+            <div class="columnHalf">
+              <div class="projectImage">
+                <video width="100%" autoplay muted loop>
+                  <source src="img/stomp.mp4" type="video/mp4" />
+                  Stomping Response Dynamic Kelvinlet
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="networkStructure" class="projectCard">
+          <h4 class="projectTitle">Network Structure of Turbulent Premixed Flames</h4>
+          <p class="projectDescription">
+            In this interdisciplinary project, I had the opportunity to work on experiments in turbulent combustion as
+            well as algorithm development. The goal of the project was to characterize turbulent premixed flame fronts
+            using complex networks and hence, provide a framework for possible flame interaction and subsequent control.
+          </p>
+          <p class="projectDescription">
+            I developed an algorithm to convert spatial flame front images, obtained via Planar Laser Induced
+            Fluorescence (PLIF) into <a href="https://en.wikipedia.org/wiki/Complex_network" target="_blank">complex
+              networks</a>. This study produced highly enriched graphical representation of flame fronts and could serve
+            as a framework for characterizing flame-turbulence interactions. The study was <a
+              href="https://doi.org/10.1063/1.4980135" target="_blank">published in Chaos: An Interdisciplinary Journal
+              of Non-Linear Science</a>.
+          </p>
+
+          <div class="rowHalf">
+            <div class="columnHalf">
+              <img class="projectImage" src="img/flameFront.png" alt="flame" style="width: 100%" />
+            </div>
+            <div class="columnHalf">
+              <img class="projectImage" src="img/complexNetwork.jpg" alt="complex network" style="width: 67%" />
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Projects End -->
+    </div>
+    <!-- Projects End -->
 
-      <!-- Resume -->
-      <div id="resume">
-        <div class="resumeBackground">
-          <img class="blur backgroundImageElement" src="img/background/starryNightHigh.jpg" alt="backgroundImage">
+    <!-- Resume -->
+    <div id="resume">
+      <div class="resumeBackground">
+        <img class="blur backgroundImageElement" src="img/background/starryNightHigh.jpg" alt="backgroundImage">
 
-          <div class="findResume">
-            <p class="aboutMeFrontPage biggerText">
-              <a class="myResume" href="resume/index.html" target="_blank">My Resume
-              </a>
-            </p>
-            <a href="resume/index.html" target="_blank" ">
-              <img src="img/resume.png" class="avatar" style="width: 100px; padding-left: 20px;">
+        <div class="findResume">
+          <p class="aboutMeFrontPage biggerText">
+            <a class="myResume" href="resume/index.html" target="_blank">My Resume
             </a>
+          </p>
+          <a href="resume/index.html" target="_blank" ">
+              <img src=" img/resume.png" class="avatar" style="width: 100px; padding-left: 20px;">
+          </a>
           </a>
         </div>
       </div>
@@ -304,24 +371,26 @@
       <h3 class="myResume" style="margin-bottom: 30px; margin-top: 0px; padding-top: 20px;">Contact</h3>
       <ul class="zeroMargin socialLinks" style="padding-bottom: 30px">
         <li class="listIcon">
-         <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b" target="_blank" data-original-title="LinkedIn">
-          <i class="fa fa-linkedin fa-3x"></i> 
-        </a> 
-      </li>
-      <li class="listIcon"> 
-        <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank" data-original-title="Github">
-         <i class="fa fa-github fa-3x"></i> 
-       </a>
-     </li>
-     <li class="listIcon">
-      <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i>
-      </a>
-    </li>
-  </ul>
-</div>
-<!-- End Contact-->
+          <a title="" class="icon" href="https://www.linkedin.com/in/jasmeet-singh-80642515b" target="_blank"
+            data-original-title="LinkedIn">
+            <i class="fa fa-linkedin fa-3x"></i>
+          </a>
+        </li>
+        <li class="listIcon">
+          <a title="" class="icon" href="https://github.com/jasmeet9323" target="_blank" data-original-title="Github">
+            <i class="fa fa-github fa-3x"></i>
+          </a>
+        </li>
+        <li class="listIcon">
+          <a class="icon" href="mailto:jasmeet.singh.mec11@iitbhu.ac.in"><i class="fa fa-envelope-o fa-3x"
+              aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- End Contact-->
 
-</div>
+  </div>
 </body>
-</html>
 
+</html>
